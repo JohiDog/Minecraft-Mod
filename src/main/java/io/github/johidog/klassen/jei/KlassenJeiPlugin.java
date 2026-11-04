@@ -18,11 +18,15 @@ public class KlassenJeiPlugin implements IModPlugin {
 
     @Override
     public void registerCategories(IRecipeCategoryRegistration registration) {
-        registration.addRecipeCategories(new RequirementsCategory(registration.getJeiHelpers().getGuiHelper()));
+        registration.addRecipeCategories(
+            new RequirementsCategory(registration.getJeiHelpers().getGuiHelper()),
+            new ClassesCategory(registration.getJeiHelpers().getGuiHelper())
+        );
     }
 
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
         registration.addRecipes(RequirementsCategory.TYPE, RequirementsData.load());
+        registration.addRecipes(ClassesCategory.TYPE, ClassesData.load());
     }
 }

@@ -47,5 +47,14 @@
   "jei.klassen.req.race_gott": "Race: God",
   "jei.klassen.req.klasse_krieger": "Class: Warrior recommended",
   "jei.klassen.req.klasse_kampfmeister": "Class: Battle Master",
-  "jei.klassen.req.klasse_koch": "Skill: Cook/Chef/Sanji"
+  "jei.klassen.req.klasse_koch": "Skill: Cook/Chef/Sanji",
+  "hud.klassen.ability": "Class",
+  "hud.klassen.ability_key": "[G] activate",
+  "jei.klassen.classes.title": "Classes & minimum tiers",
+  "jei.klassen.entry.krieger": "Warrior",
+  "jei.klassen.entry.magier": "Mage",
+  "jei.klassen.entry.bogenschuetze": "Archer",
+  "jei.klassen.entry.koch": "Cook",
+  "jei.klassen.entry.schmied": "Smith",
+  "jei.klassen.entry.paladin": "Paladin (human only)"
 }

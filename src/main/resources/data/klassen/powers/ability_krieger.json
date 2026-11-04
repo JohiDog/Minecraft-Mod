@@ -1,0 +1,8 @@
+{
+  "type": "apoli:active_self",
+  "key": {"key": "key.origins.primary_active", "continuous": false},
+  "cooldown": 400,
+  "entity_action": {"type": "apoli:apply_effect", "effect": {"id": "minecraft:strength", "duration": 100, "amplifier": 1}},
+  "name": {"translate": "power.klassen.ability_krieger.name"},
+  "description": {"translate": "power.klassen.ability_krieger.description"}
+}

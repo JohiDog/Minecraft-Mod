@@ -27,5 +27,7 @@ public class KlassenModClient implements ClientModInitializer {
                 }
             }
         });
+
+        KlassenHudOverlay.register();
     }
 }

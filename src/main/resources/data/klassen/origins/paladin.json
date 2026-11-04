@@ -1,8 +1,17 @@
 {
-  "powers": ["origins:natural_armor"],
-  "icon": {"item": "minecraft:shield"},
+  "powers": [
+    "origins:natural_armor",
+    "klassen:ability_paladin"
+  ],
+  "icon": {
+    "item": "minecraft:shield"
+  },
   "impact": 2,
   "order": 3,
-  "name": {"translate": "origin.klassen.paladin.name"},
-  "description": {"translate": "origin.klassen.paladin.description"}
+  "name": {
+    "translate": "origin.klassen.paladin.name"
+  },
+  "description": {
+    "translate": "origin.klassen.paladin.description"
+  }
 }

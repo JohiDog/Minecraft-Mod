@@ -1,6 +1,7 @@
 {
   "powers": [
-    "klassen:magier_projektil"
+    "klassen:magier_projektil",
+    "klassen:ability_magier"
   ],
   "icon": {
     "item": "minecraft:book"

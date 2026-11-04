@@ -1,11 +1,25 @@
 {
-  "powers": ["klassen:schmied_lehrling_break", "klassen:schmied_damage"],
-  "icon": {"item": "minecraft:diamond_pickaxe"},
+  "powers": [
+    "klassen:schmied_lehrling_break",
+    "klassen:schmied_damage",
+    "klassen:ability_schmied"
+  ],
+  "icon": {
+    "item": "minecraft:diamond_pickaxe"
+  },
   "unchoosable": true,
   "impact": 2,
-  "name": {"translate": "origin.klassen.schmied.name"},
-  "description": {"translate": "origin.klassen.schmied.description"},
+  "name": {
+    "translate": "origin.klassen.schmied.name"
+  },
+  "description": {
+    "translate": "origin.klassen.schmied.description"
+  },
   "upgrades": [
-    {"condition": "klassen:evolution/himmelsschmied", "origin": "klassen:himmelsschmied", "announcement": "announcement.klassen.himmelsschmied"}
+    {
+      "condition": "klassen:evolution/himmelsschmied",
+      "origin": "klassen:himmelsschmied",
+      "announcement": "announcement.klassen.himmelsschmied"
+    }
   ]
 }

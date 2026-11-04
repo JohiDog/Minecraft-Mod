@@ -2,7 +2,8 @@
   "powers": [
     "klassen:erfahrener_magier_recipes",
     "klassen:erzmagier_god_spells",
-    "klassen:erzmagier_projektil"
+    "klassen:erzmagier_projektil",
+    "klassen:ability_magier"
   ],
   "icon": {
     "item": "minecraft:nether_star"

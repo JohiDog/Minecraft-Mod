@@ -1,6 +1,7 @@
 {
   "powers": [
-    "klassen:erfahrener_magier_recipes"
+    "klassen:erfahrener_magier_recipes",
+    "klassen:ability_magier"
   ],
   "icon": {
     "item": "minecraft:enchanted_book"

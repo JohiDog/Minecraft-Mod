@@ -1,8 +1,22 @@
 {
-  "powers": ["klassen:krieger_stark_1", "klassen:krieger_stark_2", "klassen:krieger_stark_3", "origins:natural_armor", "origins:strong_arms", "origins:fire_immunity"],
-  "icon": {"item": "minecraft:netherite_sword"},
+  "powers": [
+    "klassen:krieger_stark_1",
+    "klassen:krieger_stark_2",
+    "klassen:krieger_stark_3",
+    "origins:natural_armor",
+    "origins:strong_arms",
+    "origins:fire_immunity",
+    "klassen:ability_krieger"
+  ],
+  "icon": {
+    "item": "minecraft:netherite_sword"
+  },
   "unchoosable": true,
   "impact": 3,
-  "name": {"translate": "origin.klassen.kampfmeister.name"},
-  "description": {"translate": "origin.klassen.kampfmeister.description"}
+  "name": {
+    "translate": "origin.klassen.kampfmeister.name"
+  },
+  "description": {
+    "translate": "origin.klassen.kampfmeister.description"
+  }
 }

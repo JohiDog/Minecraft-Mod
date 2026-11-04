@@ -1,11 +1,24 @@
 {
-  "powers": ["klassen:koch_food_bonus"],
-  "icon": {"item": "minecraft:carrot"},
+  "powers": [
+    "klassen:koch_food_bonus",
+    "klassen:ability_koch"
+  ],
+  "icon": {
+    "item": "minecraft:carrot"
+  },
   "impact": 1,
   "order": 1,
-  "name": {"translate": "origin.klassen.koch.name"},
-  "description": {"translate": "origin.klassen.koch.description"},
+  "name": {
+    "translate": "origin.klassen.koch.name"
+  },
+  "description": {
+    "translate": "origin.klassen.koch.description"
+  },
   "upgrades": [
-    {"condition": "klassen:evolution/chef", "origin": "klassen:chef", "announcement": "announcement.klassen.chef"}
+    {
+      "condition": "klassen:evolution/chef",
+      "origin": "klassen:chef",
+      "announcement": "announcement.klassen.chef"
+    }
   ]
 }

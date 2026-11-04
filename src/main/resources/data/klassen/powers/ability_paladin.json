@@ -1,0 +1,8 @@
+{
+  "type": "apoli:active_self",
+  "key": {"key": "key.origins.primary_active", "continuous": false},
+  "cooldown": 600,
+  "entity_action": {"type": "apoli:apply_effect", "effect": {"id": "minecraft:resistance", "duration": 200, "amplifier": 0}},
+  "name": {"translate": "power.klassen.ability_paladin.name"},
+  "description": {"translate": "power.klassen.ability_paladin.description"}
+}

@@ -14,7 +14,7 @@ Rezepte sind hinter Klasse/Tier gelockt).
 
 1. Voraussetzung: Minecraft **1.20.2** mit Fabric Loader >= 0.15.10, dazu die Mods
    **Origins 1.12.10** (liefert Apoli/Calio gleich mit) und **Fabric API 0.91.6+1.20.2**.
-2. Jar ist fertig in `dist/klassen-framework-1.1.0+1.20.2.jar` – in den `mods/`-Ordner legen. Neu bauen (JDK 17 noetig): `./tools/build-jar.sh` (= `./gradlew build`).
+2. Jar ist fertig in `dist/klassen-framework-1.2.0+1.20.2.jar` – in den `mods/`-Ordner legen. Neu bauen (JDK 17 noetig): `./tools/build-jar.sh` (= `./gradlew build`).
 3. Neue Welt erstellen -> Auswahl-Reihenfolge: **Rasse -> Klasse -> Skill 1 -> Skill 2 -> Skill 3**
    (die vanilla `origins:origin`-Schicht ist abgeschaltet, siehe `data/origins/origin_layers/origin.json`;
    zum Re-Aktivieren Datei loeschen oder `"enabled": true` setzen).
@@ -34,7 +34,8 @@ Rezepte sind hinter Klasse/Tier gelockt).
   Enderperle + Smaragd-Block), oder `/origin set <spieler> <layer> <origin>` (z.B. `/origin set @s klassen:class klassen:magier_lehrling`).
 - **Anzeigen:** `/origin get @s <layer>`, Taste `O` (View Origin), Taste `G` (aktive Power).
 - **Uebersicht mit X:** Taste **`X`** oeffnet die Klassen-Uebersicht: alle Layer (Rasse/Klasse/Skills), jede Origin mit Icon, Impact, aktuell gewaehlt (gruen) und Aufstiegs-Kette (Advancement -> Ziel).
-- **JEI-Requirements:** Mit JEI installiert: auf ein Item in JEI klicken (z.B. Diamantschwert) -> Kategorie "Anforderungen" zeigt, welche Rasse/Klasse noetig ist (z.B. Diamantschwert: mindestens Erhobener Mensch). Eintraege: `data/klassen/jei_requirements/*.json`.
+- **JEI-Requirements:** Mit JEI installiert: auf ein Item in JEI klicken (z.B. Diamantschwert) -> Kategorie "Anforderungen" zeigt, welche Rasse/Klasse noetig ist. Zusaetzlicher JEI-Tab **"Klassen & Mindest-Stufen"** listet alle Klassen mit ihren Stufen. Eintraege: `data/klassen/jei_requirements/*.json` und `data/klassen/jei_classes/*.json`.
+- **Klassen-Faehigkeit links der Hotbar:** HUD zeigt links neben der Hotbar deine aktuelle Klasse + aktive Faehigkeit; mit **G** ausloesen (jede Klasse hat eine: Krieger=Staerke, Magier=Nachtsicht+Leuchten, Bogenschuetze=Schnelligkeit, Koch=Saettigung, Schmied=Eile, Paladin=Resistenz).
 
 ## Aufbau
 

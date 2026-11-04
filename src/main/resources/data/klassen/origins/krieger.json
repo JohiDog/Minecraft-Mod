@@ -1,11 +1,26 @@
 {
-  "powers": ["klassen:krieger_stark_1", "klassen:krieger_stark_2", "origins:natural_armor"],
-  "icon": {"item": "minecraft:iron_sword"},
+  "powers": [
+    "klassen:krieger_stark_1",
+    "klassen:krieger_stark_2",
+    "origins:natural_armor",
+    "klassen:ability_krieger"
+  ],
+  "icon": {
+    "item": "minecraft:iron_sword"
+  },
   "unchoosable": true,
   "impact": 2,
-  "name": {"translate": "origin.klassen.krieger.name"},
-  "description": {"translate": "origin.klassen.krieger.description"},
+  "name": {
+    "translate": "origin.klassen.krieger.name"
+  },
+  "description": {
+    "translate": "origin.klassen.krieger.description"
+  },
   "upgrades": [
-    {"condition": "klassen:evolution/kampfmeister", "origin": "klassen:kampfmeister", "announcement": "announcement.klassen.kampfmeister"}
+    {
+      "condition": "klassen:evolution/kampfmeister",
+      "origin": "klassen:kampfmeister",
+      "announcement": "announcement.klassen.kampfmeister"
+    }
   ]
 }

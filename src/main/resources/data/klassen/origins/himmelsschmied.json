@@ -1,8 +1,19 @@
 {
-  "powers": ["klassen:schmied_lehrling_break", "klassen:schmied_damage", "klassen:himmelsschmied_god_weapons"],
-  "icon": {"item": "minecraft:netherite_pickaxe"},
+  "powers": [
+    "klassen:schmied_lehrling_break",
+    "klassen:schmied_damage",
+    "klassen:himmelsschmied_god_weapons",
+    "klassen:ability_schmied"
+  ],
+  "icon": {
+    "item": "minecraft:netherite_pickaxe"
+  },
   "unchoosable": true,
   "impact": 3,
-  "name": {"translate": "origin.klassen.himmelsschmied.name"},
-  "description": {"translate": "origin.klassen.himmelsschmied.description"}
+  "name": {
+    "translate": "origin.klassen.himmelsschmied.name"
+  },
+  "description": {
+    "translate": "origin.klassen.himmelsschmied.description"
+  }
 }
