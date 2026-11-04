@@ -1,0 +1,15 @@
+{
+  "type": "apoli:prevent_item_use",
+  "item_condition": {"type": "apoli:item", "item": "minecraft:diamond_sword"},
+  "condition": {
+    "type": "apoli:or",
+    "inverted": true,
+    "conditions": [
+      {"type": "origins:origin", "origin": "klassen:erhobener_mensch", "layer": "klassen:race"},
+      {"type": "origins:origin", "origin": "klassen:halbgott", "layer": "klassen:race"},
+      {"type": "origins:origin", "origin": "klassen:gott", "layer": "klassen:race"}
+    ]
+  },
+  "name": {"translate": "power.klassen.lock_diamond_sword.name"},
+  "description": {"translate": "power.klassen.lock_diamond_sword.description"}
+}

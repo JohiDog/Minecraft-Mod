@@ -31,5 +31,21 @@
   "announcement.klassen.chef": "You have ascended to Chef!",
   "announcement.klassen.himmelsschmied": "You have ascended to Sky Smith!",
   "advancements.klassen.recipes.fd_koch.title": "Cook Recipes",
-  "advancements.klassen.recipes.fd_koch.description": "Become a Cook to unlock Farmer's Delight recipes."
+  "advancements.klassen.recipes.fd_koch.description": "Become a Cook to unlock Farmer's Delight recipes.",
+  "key.klassen.overview": "Open class overview",
+  "category.klassen": "Klassen Framework",
+  "screen.klassen.overview.title": "Races, Classes & Ascensions",
+  "screen.klassen.overview.entry": "%s (impact %s)",
+  "screen.klassen.overview.upgrade": "Ascension: %s (advancement: %s)",
+  "origin.klassen.krieger_lehrling.name": "Warrior Apprentice",
+  "origin.klassen.krieger.name": "Warrior",
+  "origin.klassen.kampfmeister.name": "Battle Master",
+  "jei.klassen.requirements.title": "Requirements",
+  "jei.klassen.requires": "Required:",
+  "jei.klassen.requires.hint": "(click the item in JEI)",
+  "jei.klassen.req.race_erhobener_mensch": "Race: at least Ascended Human",
+  "jei.klassen.req.race_gott": "Race: God",
+  "jei.klassen.req.klasse_krieger": "Class: Warrior recommended",
+  "jei.klassen.req.klasse_kampfmeister": "Class: Battle Master",
+  "jei.klassen.req.klasse_koch": "Skill: Cook/Chef/Sanji"
 }

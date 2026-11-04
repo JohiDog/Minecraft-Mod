@@ -1,0 +1,6 @@
+{
+  "type": "apoli:modify_projectile_damage",
+  "modifier": {"operation": "addition", "value": 2.0},
+  "name": {"translate": "power.klassen.magier_projektil.name"},
+  "description": {"translate": "power.klassen.magier_projektil.description"}
+}

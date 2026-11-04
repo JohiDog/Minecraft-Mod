@@ -14,7 +14,7 @@ Rezepte sind hinter Klasse/Tier gelockt).
 
 1. Voraussetzung: Minecraft **1.20.2** mit Fabric Loader >= 0.15.10, dazu die Mods
    **Origins 1.12.10** (liefert Apoli/Calio gleich mit) und **Fabric API 0.91.6+1.20.2**.
-2. Jar bauen (`./tools/build-jar.sh`, falls nicht schon in `dist/` vorhanden) und `dist/klassen-framework-1.0.0+1.20.2.jar` in den `mods/`-Ordner legen. Fertig.
+2. Jar ist fertig in `dist/klassen-framework-1.1.0+1.20.2.jar` – in den `mods/`-Ordner legen. Neu bauen (JDK 17 noetig): `./tools/build-jar.sh` (= `./gradlew build`).
 3. Neue Welt erstellen -> Auswahl-Reihenfolge: **Rasse -> Klasse -> Skill 1 -> Skill 2 -> Skill 3**
    (die vanilla `origins:origin`-Schicht ist abgeschaltet, siehe `data/origins/origin_layers/origin.json`;
    zum Re-Aktivieren Datei loeschen oder `"enabled": true` setzen).
@@ -33,6 +33,8 @@ Rezepte sind hinter Klasse/Tier gelockt).
 - **Neu waehlen:** Orb of Origin ist craftbar (`data/klassen/recipes/orb_of_origin.json`:
   Enderperle + Smaragd-Block), oder `/origin set <spieler> <layer> <origin>` (z.B. `/origin set @s klassen:class klassen:magier_lehrling`).
 - **Anzeigen:** `/origin get @s <layer>`, Taste `O` (View Origin), Taste `G` (aktive Power).
+- **Uebersicht mit X:** Taste **`X`** oeffnet die Klassen-Uebersicht: alle Layer (Rasse/Klasse/Skills), jede Origin mit Icon, Impact, aktuell gewaehlt (gruen) und Aufstiegs-Kette (Advancement -> Ziel).
+- **JEI-Requirements:** Mit JEI installiert: auf ein Item in JEI klicken (z.B. Diamantschwert) -> Kategorie "Anforderungen" zeigt, welche Rasse/Klasse noetig ist (z.B. Diamantschwert: mindestens Erhobener Mensch). Eintraege: `data/klassen/jei_requirements/*.json`.
 
 ## Aufbau
 
@@ -68,7 +70,7 @@ src/main/resources/
 - Neue Waffenkategorie: Tag in `data/klassen/tags/items/` + Lock-Power in `powers/` + Referenz in `origins/base.json`.
 - Eigenen Code (z.B. Power fuer Item-Durability): `build.gradle` auf fabric-loom umstellen,
   siehe `examples/CustomPowerExample.java`.
-- Fertiges Jar bauen: `./tools/build-jar.sh` -> `dist/klassen-framework-1.0.0+1.20.2.jar` (packt `src/main/resources` zu einem Jar; braucht nur python3 oder das JDK-`jar`-Tool). Optionaler Gradle-Build weiter unten.
+- Fertiges Jar bauen: `./tools/build-jar.sh` -> `./gradlew build` (Fabric Loom, JDK 17) -> Jar in `dist/`.
 
 ## Doku
 
