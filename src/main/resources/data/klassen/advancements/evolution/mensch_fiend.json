@@ -16,7 +16,7 @@
   },
   "criteria": {
     "req": {
-      "trigger": "minecraft:story/deflect_arrow"
+      "trigger": "minecraft:tame_animal"
     }
   },
   "requirements": [

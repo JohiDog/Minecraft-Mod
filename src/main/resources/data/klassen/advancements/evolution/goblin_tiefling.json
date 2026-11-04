@@ -16,7 +16,7 @@
   },
   "criteria": {
     "req": {
-      "trigger": "minecraft:end/kill_dragon"
+      "trigger": "minecraft:villager_trade"
     }
   },
   "requirements": [

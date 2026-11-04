@@ -1,15 +1,27 @@
 {
   "parent": "minecraft:end/root",
   "display": {
-    "icon": {"item": "minecraft:beacon"},
-    "title": {"translate": "advancements.klassen.evolution.gott.title"},
-    "description": {"translate": "advancements.klassen.evolution.gott.description"},
+    "icon": {
+      "item": "minecraft:beacon"
+    },
+    "title": {
+      "translate": "advancements.klassen.evolution.gott.title"
+    },
+    "description": {
+      "translate": "advancements.klassen.evolution.gott.description"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true
   },
   "criteria": {
-    "req": {"trigger": "minecraft:end/kill_dragon"}
+    "req": {
+      "trigger": "minecraft:fall_from_height"
+    }
   },
-  "requirements": [["req"]]
+  "requirements": [
+    [
+      "req"
+    ]
+  ]
 }

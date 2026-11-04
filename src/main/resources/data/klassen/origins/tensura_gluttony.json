@@ -7,10 +7,6 @@
   },
   "impact": 3,
   "order": 11,
-  "name": {
-    "translate": "origin.klassen.tensura_gluttony.name"
-  },
-  "description": {
-    "translate": "origin.klassen.tensura_gluttony.description"
-  }
+  "name": "origin.klassen.tensura_gluttony.name",
+  "description": "origin.klassen.tensura_gluttony.description"
 }

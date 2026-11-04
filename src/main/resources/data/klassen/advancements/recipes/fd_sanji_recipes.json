@@ -1,19 +1,37 @@
 {
   "parent": "minecraft:story/root",
   "display": {
-    "icon": {"item": "farmersdelight:gourmet_beef_stew"},
-    "title": {"translate": "advancements.klassen.recipes.fd_sanji.title"},
-    "description": {"translate": "advancements.klassen.recipes.fd_sanji.description"},
+    "icon": {
+      "item": "farmersdelight:gourmet_beef_stew"
+    },
+    "title": {
+      "translate": "advancements.klassen.recipes.fd_sanji.title"
+    },
+    "description": {
+      "translate": "advancements.klassen.recipes.fd_sanji.description"
+    },
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
   },
   "criteria": {
-    "chose_sanji": {"trigger": "origins:chose_origin", "conditions": {"origin": "klassen:sanji"}}
+    "chose_sanji": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "klassen:sanji"
+      }
+    }
   },
-  "requirements": [["chose_sanji"]],
+  "requirements": [
+    [
+      "chose_sanji"
+    ]
+  ],
   "rewards": {
-    "recipes": ["farmersdelight:stuffed_potato", "farmersdelight:cooked_cod_slice", "farmersdelight:gourmet_beef_stew", "farmersdelight:pasta_with_meatballs"]
+    "recipes": [
+      "farmersdelight:stuffed_potato",
+      "farmersdelight:pasta_with_meatballs"
+    ]
   }
 }

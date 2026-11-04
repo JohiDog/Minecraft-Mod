@@ -6,12 +6,8 @@
     "item": "minecraft:diamond"
   },
   "impact": 1,
-  "name": {
-    "translate": "origin.klassen.erhobener_mensch.name"
-  },
-  "description": {
-    "translate": "origin.klassen.erhobener_mensch.description"
-  },
+  "name": "origin.klassen.erhobener_mensch.name",
+  "description": "origin.klassen.erhobener_mensch.description",
   "unchoosable": true,
   "upgrades": [
     {

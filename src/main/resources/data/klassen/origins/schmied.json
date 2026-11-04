@@ -9,12 +9,8 @@
   },
   "unchoosable": true,
   "impact": 2,
-  "name": {
-    "translate": "origin.klassen.schmied.name"
-  },
-  "description": {
-    "translate": "origin.klassen.schmied.description"
-  },
+  "name": "origin.klassen.schmied.name",
+  "description": "origin.klassen.schmied.description",
   "upgrades": [
     {
       "condition": "klassen:evolution/himmelsschmied",

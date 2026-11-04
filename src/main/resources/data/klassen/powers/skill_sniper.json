@@ -4,10 +4,6 @@
     "operation": "addition",
     "value": 5.0
   },
-  "name": {
-    "translate": "power.klassen.skill_sniper.name"
-  },
-  "description": {
-    "translate": "power.klassen.skill_sniper.description"
-  }
+  "name": "power.klassen.skill_sniper.name",
+  "description": "power.klassen.skill_sniper.description"
 }

@@ -4,12 +4,8 @@
     "item": "minecraft:iron_sword"
   },
   "impact": 0,
-  "name": {
-    "translate": "origin.klassen.goblin.name"
-  },
-  "description": {
-    "translate": "origin.klassen.goblin.description"
-  },
+  "name": "origin.klassen.goblin.name",
+  "description": "origin.klassen.goblin.description",
   "order": 1,
   "upgrades": [
     {

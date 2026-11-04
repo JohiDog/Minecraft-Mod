@@ -6,12 +6,8 @@
     "item": "minecraft:iron_pickaxe"
   },
   "impact": 1,
-  "name": {
-    "translate": "origin.klassen.zwerg.name"
-  },
-  "description": {
-    "translate": "origin.klassen.zwerg.description"
-  },
+  "name": "origin.klassen.zwerg.name",
+  "description": "origin.klassen.zwerg.description",
   "unchoosable": true,
   "upgrades": [
     {

@@ -7,12 +7,8 @@
     "item": "minecraft:golden_axe"
   },
   "impact": 2,
-  "name": {
-    "translate": "origin.klassen.goblin_hob.name"
-  },
-  "description": {
-    "translate": "origin.klassen.goblin_hob.description"
-  },
+  "name": "origin.klassen.goblin_hob.name",
+  "description": "origin.klassen.goblin_hob.description",
   "unchoosable": true,
   "upgrades": [
     {

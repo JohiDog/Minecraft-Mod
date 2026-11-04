@@ -1,6 +1,9 @@
 {
   "type": "apoli:modify_damage_dealt",
-  "modifier": {"operation": "addition", "value": 3.0},
-  "name": {"translate": "power.klassen.schmied_damage.name"},
-  "description": {"translate": "power.klassen.schmied_damage.description"}
+  "modifier": {
+    "operation": "addition",
+    "value": 3.0
+  },
+  "name": "power.klassen.schmied_damage.name",
+  "description": "power.klassen.schmied_damage.description"
 }

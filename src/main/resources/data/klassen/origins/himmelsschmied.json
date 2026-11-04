@@ -2,7 +2,6 @@
   "powers": [
     "klassen:schmied_lehrling_break",
     "klassen:schmied_damage",
-    "klassen:himmelsschmied_god_weapons",
     "klassen:ability_schmied"
   ],
   "icon": {
@@ -10,10 +9,6 @@
   },
   "unchoosable": true,
   "impact": 3,
-  "name": {
-    "translate": "origin.klassen.himmelsschmied.name"
-  },
-  "description": {
-    "translate": "origin.klassen.himmelsschmied.description"
-  }
+  "name": "origin.klassen.himmelsschmied.name",
+  "description": "origin.klassen.himmelsschmied.description"
 }

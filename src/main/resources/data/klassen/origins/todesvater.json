@@ -8,11 +8,7 @@
     "item": "minecraft:wither_rose"
   },
   "impact": 3,
-  "name": {
-    "translate": "origin.klassen.todesvater.name"
-  },
-  "description": {
-    "translate": "origin.klassen.todesvater.description"
-  },
+  "name": "origin.klassen.todesvater.name",
+  "description": "origin.klassen.todesvater.description",
   "unchoosable": true
 }

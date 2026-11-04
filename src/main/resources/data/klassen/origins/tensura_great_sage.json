@@ -7,10 +7,6 @@
   },
   "impact": 3,
   "order": 12,
-  "name": {
-    "translate": "origin.klassen.tensura_great_sage.name"
-  },
-  "description": {
-    "translate": "origin.klassen.tensura_great_sage.description"
-  }
+  "name": "origin.klassen.tensura_great_sage.name",
+  "description": "origin.klassen.tensura_great_sage.description"
 }

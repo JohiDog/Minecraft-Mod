@@ -16,7 +16,7 @@
   },
   "criteria": {
     "req": {
-      "trigger": "minecraft:nether/root"
+      "trigger": "minecraft:consume_item"
     }
   },
   "requirements": [

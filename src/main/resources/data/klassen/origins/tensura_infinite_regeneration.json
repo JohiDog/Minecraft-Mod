@@ -7,10 +7,6 @@
   },
   "impact": 3,
   "order": 14,
-  "name": {
-    "translate": "origin.klassen.tensura_infinite_regeneration.name"
-  },
-  "description": {
-    "translate": "origin.klassen.tensura_infinite_regeneration.description"
-  }
+  "name": "origin.klassen.tensura_infinite_regeneration.name",
+  "description": "origin.klassen.tensura_infinite_regeneration.description"
 }

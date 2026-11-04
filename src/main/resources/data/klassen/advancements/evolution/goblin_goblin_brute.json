@@ -16,7 +16,7 @@
   },
   "criteria": {
     "req": {
-      "trigger": "minecraft:adventure/sniper_duel"
+      "trigger": "minecraft:slept_in_bed"
     }
   },
   "requirements": [

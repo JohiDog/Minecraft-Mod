@@ -16,7 +16,7 @@
   },
   "criteria": {
     "req": {
-      "trigger": "minecraft:nether/root"
+      "trigger": "minecraft:killed_by_crossbow"
     }
   },
   "requirements": [

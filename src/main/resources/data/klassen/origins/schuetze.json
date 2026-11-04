@@ -8,12 +8,8 @@
   },
   "unchoosable": true,
   "impact": 2,
-  "name": {
-    "translate": "origin.klassen.schuetze.name"
-  },
-  "description": {
-    "translate": "origin.klassen.schuetze.description"
-  },
+  "name": "origin.klassen.schuetze.name",
+  "description": "origin.klassen.schuetze.description",
   "upgrades": [
     {
       "condition": "klassen:evolution/meisterschuetze",

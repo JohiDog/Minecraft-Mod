@@ -9,11 +9,7 @@
     "item": "minecraft:beacon"
   },
   "impact": 3,
-  "name": {
-    "translate": "origin.klassen.gott.name"
-  },
-  "description": {
-    "translate": "origin.klassen.gott.description"
-  },
+  "name": "origin.klassen.gott.name",
+  "description": "origin.klassen.gott.description",
   "unchoosable": true
 }

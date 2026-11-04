@@ -6,10 +6,16 @@
     "klassen:bogenschuetze_anfaenger",
     "klassen:krieger_lehrling",
     {
-      "condition": {"type": "origins:origin", "origin": "klassen:mensch", "layer": "klassen:race"},
-      "origins": ["klassen:paladin"]
+      "condition": {
+        "type": "origins:origin",
+        "origin": "klassen:mensch",
+        "layer": "klassen:race"
+      },
+      "origins": [
+        "klassen:paladin"
+      ]
     }
   ],
   "allow_random": true,
-  "name": {"translate": "layer.klassen.class.name"}
+  "name": "layer.klassen.class.name"
 }

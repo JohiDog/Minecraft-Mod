@@ -8,10 +8,6 @@
   },
   "impact": 2,
   "order": 3,
-  "name": {
-    "translate": "origin.klassen.paladin.name"
-  },
-  "description": {
-    "translate": "origin.klassen.paladin.description"
-  }
+  "name": "origin.klassen.paladin.name",
+  "description": "origin.klassen.paladin.description"
 }

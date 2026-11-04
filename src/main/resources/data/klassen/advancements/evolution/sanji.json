@@ -1,15 +1,27 @@
 {
   "parent": "minecraft:end/root",
   "display": {
-    "icon": {"item": "minecraft:golden_carrot"},
-    "title": {"translate": "advancements.klassen.evolution.sanji.title"},
-    "description": {"translate": "advancements.klassen.evolution.sanji.description"},
+    "icon": {
+      "item": "minecraft:golden_carrot"
+    },
+    "title": {
+      "translate": "advancements.klassen.evolution.sanji.title"
+    },
+    "description": {
+      "translate": "advancements.klassen.evolution.sanji.description"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true
   },
   "criteria": {
-    "req": {"trigger": "minecraft:end/kill_dragon"}
+    "req": {
+      "trigger": "minecraft:recipe_unlocked"
+    }
   },
-  "requirements": [["req"]]
+  "requirements": [
+    [
+      "req"
+    ]
+  ]
 }

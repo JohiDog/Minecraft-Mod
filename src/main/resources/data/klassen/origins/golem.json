@@ -6,12 +6,8 @@
     "item": "minecraft:iron_block"
   },
   "impact": 1,
-  "name": {
-    "translate": "origin.klassen.golem.name"
-  },
-  "description": {
-    "translate": "origin.klassen.golem.description"
-  },
+  "name": "origin.klassen.golem.name",
+  "description": "origin.klassen.golem.description",
   "unchoosable": true,
   "upgrades": [
     {

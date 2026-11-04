@@ -16,7 +16,7 @@
   },
   "criteria": {
     "req": {
-      "trigger": "minecraft:adventure/trade"
+      "trigger": "minecraft:item_durability_changed"
     }
   },
   "requirements": [

@@ -16,7 +16,7 @@
   },
   "criteria": {
     "req": {
-      "trigger": "minecraft:nether/ride_strider"
+      "trigger": "minecraft:shot_crossbow"
     }
   },
   "requirements": [

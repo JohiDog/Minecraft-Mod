@@ -7,10 +7,6 @@
   },
   "impact": 1,
   "order": 23,
-  "name": {
-    "translate": "origin.klassen.tensura_spirit_sight.name"
-  },
-  "description": {
-    "translate": "origin.klassen.tensura_spirit_sight.description"
-  }
+  "name": "origin.klassen.tensura_spirit_sight.name",
+  "description": "origin.klassen.tensura_spirit_sight.description"
 }

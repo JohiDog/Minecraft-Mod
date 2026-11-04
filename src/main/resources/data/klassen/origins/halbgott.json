@@ -8,12 +8,8 @@
     "item": "minecraft:nether_star"
   },
   "impact": 3,
-  "name": {
-    "translate": "origin.klassen.halbgott.name"
-  },
-  "description": {
-    "translate": "origin.klassen.halbgott.description"
-  },
+  "name": "origin.klassen.halbgott.name",
+  "description": "origin.klassen.halbgott.description",
   "unchoosable": true,
   "upgrades": [
     {

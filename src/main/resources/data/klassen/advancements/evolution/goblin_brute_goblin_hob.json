@@ -16,7 +16,7 @@
   },
   "criteria": {
     "req": {
-      "trigger": "minecraft:story/obtain_armor"
+      "trigger": "minecraft:target_hit"
     }
   },
   "requirements": [

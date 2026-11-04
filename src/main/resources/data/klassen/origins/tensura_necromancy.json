@@ -7,10 +7,6 @@
   },
   "impact": 3,
   "order": 25,
-  "name": {
-    "translate": "origin.klassen.tensura_necromancy.name"
-  },
-  "description": {
-    "translate": "origin.klassen.tensura_necromancy.description"
-  }
+  "name": "origin.klassen.tensura_necromancy.name",
+  "description": "origin.klassen.tensura_necromancy.description"
 }

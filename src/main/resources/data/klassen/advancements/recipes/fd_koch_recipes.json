@@ -1,19 +1,37 @@
 {
   "parent": "minecraft:story/root",
   "display": {
-    "icon": {"item": "farmersdelight:cooking_pot"},
-    "title": {"translate": "advancements.klassen.recipes.fd_koch.title"},
-    "description": {"translate": "advancements.klassen.recipes.fd_koch.description"},
+    "icon": {
+      "item": "farmersdelight:cooking_pot"
+    },
+    "title": {
+      "translate": "advancements.klassen.recipes.fd_koch.title"
+    },
+    "description": {
+      "translate": "advancements.klassen.recipes.fd_koch.description"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,
     "hidden": true
   },
   "criteria": {
-    "chose_koch": {"trigger": "origins:chose_origin", "conditions": {"origin": "klassen:koch"}}
+    "chose_koch": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "klassen:koch"
+      }
+    }
   },
-  "requirements": [["chose_koch"]],
+  "requirements": [
+    [
+      "chose_koch"
+    ]
+  ],
   "rewards": {
-    "recipes": ["farmersdelight:cooked_rice", "farmersdelight:chicken_soup"]
+    "recipes": [
+      "farmersdelight:cooked_rice",
+      "farmersdelight:chicken_soup"
+    ]
   }
 }

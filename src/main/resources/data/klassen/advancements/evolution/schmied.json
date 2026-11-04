@@ -1,15 +1,27 @@
 {
   "parent": "minecraft:story/root",
   "display": {
-    "icon": {"item": "minecraft:iron_pickaxe"},
-    "title": {"translate": "advancements.klassen.evolution.schmied.title"},
-    "description": {"translate": "advancements.klassen.evolution.schmied.description"},
+    "icon": {
+      "item": "minecraft:iron_pickaxe"
+    },
+    "title": {
+      "translate": "advancements.klassen.evolution.schmied.title"
+    },
+    "description": {
+      "translate": "advancements.klassen.evolution.schmied.description"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true
   },
   "criteria": {
-    "req": {"trigger": "minecraft:story/smelt_iron"}
+    "req": {
+      "trigger": "minecraft:location"
+    }
   },
-  "requirements": [["req"]]
+  "requirements": [
+    [
+      "req"
+    ]
+  ]
 }

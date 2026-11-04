@@ -7,10 +7,6 @@
   },
   "impact": 2,
   "order": 21,
-  "name": {
-    "translate": "origin.klassen.tensura_wind_blade.name"
-  },
-  "description": {
-    "translate": "origin.klassen.tensura_wind_blade.description"
-  }
+  "name": "origin.klassen.tensura_wind_blade.name",
+  "description": "origin.klassen.tensura_wind_blade.description"
 }

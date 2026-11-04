@@ -13,10 +13,6 @@
   },
   "unchoosable": true,
   "impact": 3,
-  "name": {
-    "translate": "origin.klassen.kampfmeister.name"
-  },
-  "description": {
-    "translate": "origin.klassen.kampfmeister.description"
-  }
+  "name": "origin.klassen.kampfmeister.name",
+  "description": "origin.klassen.kampfmeister.description"
 }

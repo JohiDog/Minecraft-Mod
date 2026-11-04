@@ -16,7 +16,7 @@
   },
   "criteria": {
     "req": {
-      "trigger": "minecraft:husbandry/bred_an_animal"
+      "trigger": "minecraft:enchanted_item"
     }
   },
   "requirements": [

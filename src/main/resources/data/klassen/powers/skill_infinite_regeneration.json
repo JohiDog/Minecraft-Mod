@@ -5,10 +5,6 @@
     "type": "apoli:heal",
     "amount": 1.0
   },
-  "name": {
-    "translate": "power.klassen.skill_infinite_regeneration.name"
-  },
-  "description": {
-    "translate": "power.klassen.skill_infinite_regeneration.description"
-  }
+  "name": "power.klassen.skill_infinite_regeneration.name",
+  "description": "power.klassen.skill_infinite_regeneration.description"
 }

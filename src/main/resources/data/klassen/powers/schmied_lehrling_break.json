@@ -1,6 +1,9 @@
 {
   "type": "apoli:modify_break_speed",
-  "modifier": {"operation": "multiply_total", "value": 1.5},
-  "name": {"translate": "power.klassen.schmied_lehrling_break.name"},
-  "description": {"translate": "power.klassen.schmied_lehrling_break.description"}
+  "modifier": {
+    "operation": "multiply_total",
+    "value": 1.5
+  },
+  "name": "power.klassen.schmied_lehrling_break.name",
+  "description": "power.klassen.schmied_lehrling_break.description"
 }

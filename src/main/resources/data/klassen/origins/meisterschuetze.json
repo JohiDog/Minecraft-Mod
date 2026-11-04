@@ -9,10 +9,6 @@
   },
   "unchoosable": true,
   "impact": 3,
-  "name": {
-    "translate": "origin.klassen.meisterschuetze.name"
-  },
-  "description": {
-    "translate": "origin.klassen.meisterschuetze.description"
-  }
+  "name": "origin.klassen.meisterschuetze.name",
+  "description": "origin.klassen.meisterschuetze.description"
 }

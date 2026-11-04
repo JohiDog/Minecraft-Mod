@@ -16,7 +16,7 @@
   },
   "criteria": {
     "req": {
-      "trigger": "minecraft:husbandry/plant_seed"
+      "trigger": "minecraft:player_killed_entity"
     }
   },
   "requirements": [

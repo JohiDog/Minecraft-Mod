@@ -8,12 +8,8 @@
     "item": "minecraft:cobblestone"
   },
   "impact": 3,
-  "name": {
-    "translate": "origin.klassen.steinriese.name"
-  },
-  "description": {
-    "translate": "origin.klassen.steinriese.description"
-  },
+  "name": "origin.klassen.steinriese.name",
+  "description": "origin.klassen.steinriese.description",
   "unchoosable": true,
   "upgrades": [
     {

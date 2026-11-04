@@ -4,12 +4,8 @@
     "item": "minecraft:apple"
   },
   "impact": 0,
-  "name": {
-    "translate": "origin.klassen.mensch.name"
-  },
-  "description": {
-    "translate": "origin.klassen.mensch.description"
-  },
+  "name": "origin.klassen.mensch.name",
+  "description": "origin.klassen.mensch.description",
   "order": 2,
   "upgrades": [
     {

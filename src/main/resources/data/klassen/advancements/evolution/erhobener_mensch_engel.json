@@ -16,7 +16,7 @@
   },
   "criteria": {
     "req": {
-      "trigger": "minecraft:husbandry/tame_an_animal"
+      "trigger": "minecraft:changed_dimension"
     }
   },
   "requirements": [

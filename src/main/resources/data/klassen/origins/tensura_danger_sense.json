@@ -7,10 +7,6 @@
   },
   "impact": 1,
   "order": 16,
-  "name": {
-    "translate": "origin.klassen.tensura_danger_sense.name"
-  },
-  "description": {
-    "translate": "origin.klassen.tensura_danger_sense.description"
-  }
+  "name": "origin.klassen.tensura_danger_sense.name",
+  "description": "origin.klassen.tensura_danger_sense.description"
 }

@@ -1,6 +1,9 @@
 {
   "type": "apoli:modify_projectile_damage",
-  "modifier": {"operation": "addition", "value": 4.0},
-  "name": {"translate": "power.klassen.erzmagier_projektil.name"},
-  "description": {"translate": "power.klassen.erzmagier_projektil.description"}
+  "modifier": {
+    "operation": "addition",
+    "value": 4.0
+  },
+  "name": "power.klassen.erzmagier_projektil.name",
+  "description": "power.klassen.erzmagier_projektil.description"
 }

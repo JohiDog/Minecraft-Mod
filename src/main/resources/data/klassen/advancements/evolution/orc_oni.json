@@ -16,7 +16,7 @@
   },
   "criteria": {
     "req": {
-      "trigger": "minecraft:adventure/arbalistic"
+      "trigger": "minecraft:construct_beacon"
     }
   },
   "requirements": [

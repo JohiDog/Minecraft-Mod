@@ -8,11 +8,7 @@
     "item": "minecraft:dragon_head"
   },
   "impact": 3,
-  "name": {
-    "translate": "origin.klassen.apex.name"
-  },
-  "description": {
-    "translate": "origin.klassen.apex.description"
-  },
+  "name": "origin.klassen.apex.name",
+  "description": "origin.klassen.apex.description",
   "unchoosable": true
 }

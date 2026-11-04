@@ -1,15 +1,27 @@
 {
   "parent": "minecraft:adventure/root",
   "display": {
-    "icon": {"item": "minecraft:book"},
-    "title": {"translate": "advancements.klassen.evolution.erfahrener_magier.title"},
-    "description": {"translate": "advancements.klassen.evolution.erfahrener_magier.description"},
+    "icon": {
+      "item": "minecraft:book"
+    },
+    "title": {
+      "translate": "advancements.klassen.evolution.erfahrener_magier.title"
+    },
+    "description": {
+      "translate": "advancements.klassen.evolution.erfahrener_magier.description"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true
   },
   "criteria": {
-    "req": {"trigger": "minecraft:husbandry/tame_an_animal"}
+    "req": {
+      "trigger": "minecraft:recipe_crafted"
+    }
   },
-  "requirements": [["req"]]
+  "requirements": [
+    [
+      "req"
+    ]
+  ]
 }

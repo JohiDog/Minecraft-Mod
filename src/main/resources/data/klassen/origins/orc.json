@@ -8,12 +8,8 @@
     "item": "minecraft:stone_axe"
   },
   "impact": 3,
-  "name": {
-    "translate": "origin.klassen.orc.name"
-  },
-  "description": {
-    "translate": "origin.klassen.orc.description"
-  },
+  "name": "origin.klassen.orc.name",
+  "description": "origin.klassen.orc.description",
   "unchoosable": true,
   "upgrades": [
     {

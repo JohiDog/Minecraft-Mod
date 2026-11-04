@@ -9,11 +9,7 @@
     "item": "minecraft:beacon"
   },
   "impact": 3,
-  "name": {
-    "translate": "origin.klassen.diablo.name"
-  },
-  "description": {
-    "translate": "origin.klassen.diablo.description"
-  },
+  "name": "origin.klassen.diablo.name",
+  "description": "origin.klassen.diablo.description",
   "unchoosable": true
 }

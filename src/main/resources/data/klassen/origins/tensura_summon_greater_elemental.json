@@ -7,10 +7,6 @@
   },
   "impact": 3,
   "order": 28,
-  "name": {
-    "translate": "origin.klassen.tensura_summon_greater_elemental.name"
-  },
-  "description": {
-    "translate": "origin.klassen.tensura_summon_greater_elemental.description"
-  }
+  "name": "origin.klassen.tensura_summon_greater_elemental.name",
+  "description": "origin.klassen.tensura_summon_greater_elemental.description"
 }

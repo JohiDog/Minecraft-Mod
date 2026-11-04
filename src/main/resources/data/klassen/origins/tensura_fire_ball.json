@@ -7,10 +7,6 @@
   },
   "impact": 2,
   "order": 18,
-  "name": {
-    "translate": "origin.klassen.tensura_fire_ball.name"
-  },
-  "description": {
-    "translate": "origin.klassen.tensura_fire_ball.description"
-  }
+  "name": "origin.klassen.tensura_fire_ball.name",
+  "description": "origin.klassen.tensura_fire_ball.description"
 }

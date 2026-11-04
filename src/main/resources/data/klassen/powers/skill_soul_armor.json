@@ -4,10 +4,6 @@
     "operation": "multiply_total",
     "value": 0.7
   },
-  "name": {
-    "translate": "power.klassen.skill_soul_armor.name"
-  },
-  "description": {
-    "translate": "power.klassen.skill_soul_armor.description"
-  }
+  "name": "power.klassen.skill_soul_armor.name",
+  "description": "power.klassen.skill_soul_armor.description"
 }

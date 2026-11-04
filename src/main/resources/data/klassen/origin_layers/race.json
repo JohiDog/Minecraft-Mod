@@ -7,7 +7,5 @@
     "klassen:gnom"
   ],
   "allow_random": true,
-  "name": {
-    "translate": "layer.klassen.race.name"
-  }
+  "name": "layer.klassen.race.name"
 }

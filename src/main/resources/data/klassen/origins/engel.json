@@ -7,12 +7,8 @@
     "item": "minecraft:feather"
   },
   "impact": 2,
-  "name": {
-    "translate": "origin.klassen.engel.name"
-  },
-  "description": {
-    "translate": "origin.klassen.engel.description"
-  },
+  "name": "origin.klassen.engel.name",
+  "description": "origin.klassen.engel.description",
   "unchoosable": true,
   "upgrades": [
     {

@@ -9,11 +9,7 @@
     "item": "minecraft:netherite_block"
   },
   "impact": 3,
-  "name": {
-    "translate": "origin.klassen.titane.name"
-  },
-  "description": {
-    "translate": "origin.klassen.titane.description"
-  },
+  "name": "origin.klassen.titane.name",
+  "description": "origin.klassen.titane.description",
   "unchoosable": true
 }

@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:story/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:crafting_table"
+    },
+    "title": {
+      "translate": "advancements.klassen.recipes.fd_chef_recipes.title"
+    },
+    "description": {
+      "translate": "advancements.klassen.recipes.fd_chef_recipes.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "criteria": {
+    "chose": {
+      "trigger": "origins:chose_origin",
+      "conditions": {
+        "origin": "klassen:chef"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "chose"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "farmersdelight:pasta_with_meatballs",
+      "farmersdelight:stuffed_potato"
+    ]
+  }
+}

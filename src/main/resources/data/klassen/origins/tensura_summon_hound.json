@@ -7,10 +7,6 @@
   },
   "impact": 1,
   "order": 26,
-  "name": {
-    "translate": "origin.klassen.tensura_summon_hound.name"
-  },
-  "description": {
-    "translate": "origin.klassen.tensura_summon_hound.description"
-  }
+  "name": "origin.klassen.tensura_summon_hound.name",
+  "description": "origin.klassen.tensura_summon_hound.description"
 }

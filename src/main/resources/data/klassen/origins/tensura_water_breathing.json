@@ -7,10 +7,6 @@
   },
   "impact": 1,
   "order": 13,
-  "name": {
-    "translate": "origin.klassen.tensura_water_breathing.name"
-  },
-  "description": {
-    "translate": "origin.klassen.tensura_water_breathing.description"
-  }
+  "name": "origin.klassen.tensura_water_breathing.name",
+  "description": "origin.klassen.tensura_water_breathing.description"
 }

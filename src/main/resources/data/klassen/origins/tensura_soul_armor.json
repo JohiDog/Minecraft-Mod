@@ -7,10 +7,6 @@
   },
   "impact": 2,
   "order": 24,
-  "name": {
-    "translate": "origin.klassen.tensura_soul_armor.name"
-  },
-  "description": {
-    "translate": "origin.klassen.tensura_soul_armor.description"
-  }
+  "name": "origin.klassen.tensura_soul_armor.name",
+  "description": "origin.klassen.tensura_soul_armor.description"
 }

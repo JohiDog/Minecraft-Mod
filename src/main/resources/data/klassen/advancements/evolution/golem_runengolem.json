@@ -16,7 +16,7 @@
   },
   "criteria": {
     "req": {
-      "trigger": "minecraft:adventure/whos_the_pillager_now"
+      "trigger": "minecraft:lightning_strike"
     }
   },
   "requirements": [

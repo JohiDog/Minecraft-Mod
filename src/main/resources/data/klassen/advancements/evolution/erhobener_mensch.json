@@ -1,15 +1,27 @@
 {
   "parent": "minecraft:story/root",
   "display": {
-    "icon": {"item": "minecraft:enchanting_table"},
-    "title": {"translate": "advancements.klassen.evolution.erhobener_mensch.title"},
-    "description": {"translate": "advancements.klassen.evolution.erhobener_mensch.description"},
+    "icon": {
+      "item": "minecraft:enchanting_table"
+    },
+    "title": {
+      "translate": "advancements.klassen.evolution.erhobener_mensch.title"
+    },
+    "description": {
+      "translate": "advancements.klassen.evolution.erhobener_mensch.description"
+    },
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true
   },
   "criteria": {
-    "req": {"trigger": "minecraft:story/enchant_item"}
+    "req": {
+      "trigger": "minecraft:hero_of_the_village"
+    }
   },
-  "requirements": [["req"]]
+  "requirements": [
+    [
+      "req"
+    ]
+  ]
 }

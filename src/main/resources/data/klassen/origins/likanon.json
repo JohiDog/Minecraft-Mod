@@ -6,12 +6,8 @@
     "item": "minecraft:bone"
   },
   "impact": 1,
-  "name": {
-    "translate": "origin.klassen.likanon.name"
-  },
-  "description": {
-    "translate": "origin.klassen.likanon.description"
-  },
+  "name": "origin.klassen.likanon.name",
+  "description": "origin.klassen.likanon.description",
   "unchoosable": true,
   "upgrades": [
     {

@@ -25,6 +25,14 @@ public final class KlassenData {
     public record LayerInfo(ResourceLocation id, String nameKey, int order, boolean enabled, boolean hidden, List<ResourceLocation> origins) {
     }
 
+
+    private static String textKey(JsonObject json, String field) {
+        var el = json.get(field);
+        if (el == null) return "";
+        if (el.isJsonPrimitive()) return el.getAsString();
+        return el.getAsJsonObject().get("translate").getAsString();
+    }
+
     public record Model(List<LayerInfo> layers, List<OriginInfo> origins) {
 
         public OriginInfo origin(ResourceLocation id) {
@@ -61,8 +69,8 @@ public final class KlassenData {
                 }
                 origins.add(new OriginInfo(
                     id,
-                    json.get("name").getAsJsonObject().get("translate").getAsString(),
-                    json.get("description").getAsJsonObject().get("translate").getAsString(),
+                    textKey(json, "name"),
+                    textKey(json, "description"),
                     json.has("impact") ? json.get("impact").getAsInt() : 0,
                     json.getAsJsonObject("icon").get("item").getAsString(),
                     ups));
@@ -85,7 +93,7 @@ public final class KlassenData {
                 }
                 layers.add(new LayerInfo(
                     id,
-                    json.get("name").getAsJsonObject().get("translate").getAsString(),
+                    textKey(json, "name"),
                     json.has("order") ? json.get("order").getAsInt() : 999,
                     json.has("enabled") ? json.get("enabled").getAsBoolean() : true,
                     json.has("hidden") && json.get("hidden").getAsBoolean(),

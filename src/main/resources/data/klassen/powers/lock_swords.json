@@ -1,18 +1,44 @@
 {
   "type": "apoli:prevent_item_use",
-  "item_condition": {"type": "apoli:item", "item": "#klassen:schwerter"},
+  "item_condition": {
+    "type": "apoli:ingredient",
+    "ingredient": {
+      "tag": "#klassen:schwerter"
+    }
+  },
   "condition": {
     "type": "apoli:or",
     "inverted": true,
     "conditions": [
-      {"type": "origins:origin", "origin": "klassen:schmied_lehrling"},
-      {"type": "origins:origin", "origin": "klassen:schmied"},
-      {"type": "origins:origin", "origin": "klassen:himmelsschmied"},
-      {"type": "origins:origin", "origin": "klassen:krieger_lehrling", "layer": "klassen:class"},
-      {"type": "origins:origin", "origin": "klassen:krieger", "layer": "klassen:class"},
-      {"type": "origins:origin", "origin": "klassen:kampfmeister", "layer": "klassen:class"}
+      {
+        "type": "origins:origin",
+        "origin": "klassen:schmied_lehrling"
+      },
+      {
+        "type": "origins:origin",
+        "origin": "klassen:schmied"
+      },
+      {
+        "type": "origins:origin",
+        "origin": "klassen:himmelsschmied"
+      },
+      {
+        "type": "origins:origin",
+        "origin": "klassen:krieger_lehrling",
+        "layer": "klassen:class"
+      },
+      {
+        "type": "origins:origin",
+        "origin": "klassen:krieger",
+        "layer": "klassen:class"
+      },
+      {
+        "type": "origins:origin",
+        "origin": "klassen:kampfmeister",
+        "layer": "klassen:class"
+      }
     ]
   },
-  "name": {"translate": "power.klassen.lock_swords.name"},
-  "description": {"translate": "power.klassen.lock_swords.description"}
+  "name": "power.klassen.lock_swords.name",
+  "description": "power.klassen.lock_swords.description"
 }

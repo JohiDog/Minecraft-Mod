@@ -4,12 +4,8 @@
     "item": "minecraft:wooden_hoe"
   },
   "impact": 0,
-  "name": {
-    "translate": "origin.klassen.gnom.name"
-  },
-  "description": {
-    "translate": "origin.klassen.gnom.description"
-  },
+  "name": "origin.klassen.gnom.name",
+  "description": "origin.klassen.gnom.description",
   "order": 3,
   "upgrades": [
     {

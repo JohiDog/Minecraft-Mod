@@ -16,7 +16,7 @@
   },
   "criteria": {
     "req": {
-      "trigger": "minecraft:adventure/trade"
+      "trigger": "minecraft:enter_block"
     }
   },
   "requirements": [

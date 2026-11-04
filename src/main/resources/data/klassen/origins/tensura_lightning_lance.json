@@ -7,10 +7,6 @@
   },
   "impact": 3,
   "order": 22,
-  "name": {
-    "translate": "origin.klassen.tensura_lightning_lance.name"
-  },
-  "description": {
-    "translate": "origin.klassen.tensura_lightning_lance.description"
-  }
+  "name": "origin.klassen.tensura_lightning_lance.name",
+  "description": "origin.klassen.tensura_lightning_lance.description"
 }

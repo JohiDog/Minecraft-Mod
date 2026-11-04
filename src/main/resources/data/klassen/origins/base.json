@@ -11,10 +11,6 @@
   },
   "unchoosable": true,
   "impact": 0,
-  "name": {
-    "translate": "origin.klassen.base.name"
-  },
-  "description": {
-    "translate": "origin.klassen.base.description"
-  }
+  "name": "origin.klassen.base.name",
+  "description": "origin.klassen.base.description"
 }

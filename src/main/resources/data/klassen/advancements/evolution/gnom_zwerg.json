@@ -16,7 +16,7 @@
   },
   "criteria": {
     "req": {
-      "trigger": "minecraft:story/smelt_iron"
+      "trigger": "minecraft:tick"
     }
   },
   "requirements": [

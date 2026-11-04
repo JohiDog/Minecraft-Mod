@@ -8,12 +8,8 @@
   },
   "impact": 1,
   "order": 1,
-  "name": {
-    "translate": "origin.klassen.koch.name"
-  },
-  "description": {
-    "translate": "origin.klassen.koch.description"
-  },
+  "name": "origin.klassen.koch.name",
+  "description": "origin.klassen.koch.description",
   "upgrades": [
     {
       "condition": "klassen:evolution/chef",

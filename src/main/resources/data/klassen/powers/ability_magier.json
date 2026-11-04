@@ -28,19 +28,15 @@
         "particle": "minecraft:enchant",
         "count": 24,
         "speed": 0.25,
-        "spread": [
-          0.6,
-          0.8,
-          0.6
-        ],
+        "spread": {
+          "x": 0.6,
+          "y": 0.8,
+          "z": 0.6
+        },
         "offset_y": 1.0
       }
     ]
   },
-  "name": {
-    "translate": "power.klassen.ability_magier.name"
-  },
-  "description": {
-    "translate": "power.klassen.ability_magier.description"
-  }
+  "name": "power.klassen.ability_magier.name",
+  "description": "power.klassen.ability_magier.description"
 }

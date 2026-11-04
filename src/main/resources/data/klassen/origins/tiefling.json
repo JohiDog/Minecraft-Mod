@@ -6,12 +6,8 @@
     "item": "minecraft:blaze_rod"
   },
   "impact": 1,
-  "name": {
-    "translate": "origin.klassen.tiefling.name"
-  },
-  "description": {
-    "translate": "origin.klassen.tiefling.description"
-  },
+  "name": "origin.klassen.tiefling.name",
+  "description": "origin.klassen.tiefling.description",
   "unchoosable": true,
   "upgrades": [
     {

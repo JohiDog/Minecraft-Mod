@@ -6,12 +6,8 @@
     "item": "minecraft:iron_axe"
   },
   "impact": 1,
-  "name": {
-    "translate": "origin.klassen.goblin_brute.name"
-  },
-  "description": {
-    "translate": "origin.klassen.goblin_brute.description"
-  },
+  "name": "origin.klassen.goblin_brute.name",
+  "description": "origin.klassen.goblin_brute.description",
   "unchoosable": true,
   "upgrades": [
     {

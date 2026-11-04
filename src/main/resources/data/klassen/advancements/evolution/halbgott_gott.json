@@ -16,7 +16,7 @@
   },
   "criteria": {
     "req": {
-      "trigger": "minecraft:nether/find_bastion"
+      "trigger": "minecraft:bred_animals"
     }
   },
   "requirements": [

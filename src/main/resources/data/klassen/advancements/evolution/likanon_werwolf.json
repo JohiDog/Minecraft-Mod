@@ -16,7 +16,7 @@
   },
   "criteria": {
     "req": {
-      "trigger": "minecraft:adventure/voluntary_exile"
+      "trigger": "minecraft:used_totem"
     }
   },
   "requirements": [

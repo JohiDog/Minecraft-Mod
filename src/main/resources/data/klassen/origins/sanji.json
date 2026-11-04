@@ -1,8 +1,6 @@
 {
   "powers": [
     "klassen:koch_food_bonus",
-    "klassen:chef_recipes",
-    "klassen:sanji_master_recipes",
     "klassen:ability_koch"
   ],
   "icon": {
@@ -10,10 +8,6 @@
   },
   "unchoosable": true,
   "impact": 3,
-  "name": {
-    "translate": "origin.klassen.sanji.name"
-  },
-  "description": {
-    "translate": "origin.klassen.sanji.description"
-  }
+  "name": "origin.klassen.sanji.name",
+  "description": "origin.klassen.sanji.description"
 }

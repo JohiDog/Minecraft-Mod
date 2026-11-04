@@ -1,5 +1,0 @@
-{
-  "type": "apoli:multiple",
-  "recipe_1": {"type": "apoli:recipe", "recipe": "waffen:gott_stab"},
-  "recipe_2": {"type": "apoli:recipe", "recipe": "waffen:gott_zauberbuch"}
-}

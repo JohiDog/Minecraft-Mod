@@ -65,7 +65,5 @@
     "klassen:tensura_summon_greater_elemental"
   ],
   "allow_random": true,
-  "name": {
-    "translate": "layer.klassen.skill_3.name"
-  }
+  "name": "layer.klassen.skill_3.name"
 }

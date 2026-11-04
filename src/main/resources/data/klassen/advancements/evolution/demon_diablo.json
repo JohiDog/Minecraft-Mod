@@ -16,7 +16,7 @@
   },
   "criteria": {
     "req": {
-      "trigger": "minecraft:story/enchant_item"
+      "trigger": "minecraft:channeled_lightning"
     }
   },
   "requirements": [

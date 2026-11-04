@@ -1,15 +1,27 @@
 {
   "parent": "minecraft:end/root",
   "display": {
-    "icon": {"item": "minecraft:netherite_sword"},
-    "title": {"translate": "advancements.klassen.evolution.kampfmeister.title"},
-    "description": {"translate": "advancements.klassen.evolution.kampfmeister.description"},
+    "icon": {
+      "item": "minecraft:netherite_sword"
+    },
+    "title": {
+      "translate": "advancements.klassen.evolution.kampfmeister.title"
+    },
+    "description": {
+      "translate": "advancements.klassen.evolution.kampfmeister.description"
+    },
     "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true
   },
   "criteria": {
-    "req": {"trigger": "minecraft:end/kill_dragon"}
+    "req": {
+      "trigger": "minecraft:player_hurt_entity"
+    }
   },
-  "requirements": [["req"]]
+  "requirements": [
+    [
+      "req"
+    ]
+  ]
 }

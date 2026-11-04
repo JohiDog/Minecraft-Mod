@@ -16,7 +16,7 @@
   },
   "criteria": {
     "req": {
-      "trigger": "minecraft:adventure/adventuring_time"
+      "trigger": "minecraft:summoned_entity"
     }
   },
   "requirements": [

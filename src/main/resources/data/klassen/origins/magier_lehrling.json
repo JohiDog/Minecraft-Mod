@@ -8,12 +8,8 @@
   },
   "impact": 1,
   "order": 1,
-  "name": {
-    "translate": "origin.klassen.magier_lehrling.name"
-  },
-  "description": {
-    "translate": "origin.klassen.magier_lehrling.description"
-  },
+  "name": "origin.klassen.magier_lehrling.name",
+  "description": "origin.klassen.magier_lehrling.description",
   "upgrades": [
     {
       "condition": "klassen:evolution/erfahrener_magier",
