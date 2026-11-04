@@ -1,0 +1,30 @@
+// Reines Daten-Mod: das Jar enthaelt nur Ressourcen (data/ + assets/), daher reicht der normale Java-Plugin.
+// Wer eigenen Code (z.B. eigene Power-Typen) hinzufuegen will: 'fabric-loom' Plugin aktivieren,
+// eine ModInitializer-Klasse in src/main/java anlegen und "entrypoints" in fabric.mod.json eintragen.
+plugins {
+    id 'java'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = 'UTF-8'
+    it.options.release = 17
+}
+
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') {
+        expand 'version': project.version
+    }
+}
