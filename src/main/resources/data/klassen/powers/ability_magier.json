@@ -3,8 +3,8 @@
   "key": {"key": "key.origins.primary_active", "continuous": false},
   "cooldown": 400,
   "entity_action": {"type": "apoli:apply_effect", "effects": [
-    {"id": "minecraft:night_vision", "duration": 200, "amplifier": 0},
-    {"id": "minecraft:glowing", "duration": 200, "amplifier": 0}
+    {"effect": "minecraft:night_vision", "duration": 200, "amplifier": 0},
+    {"effect": "minecraft:glowing", "duration": 200, "amplifier": 0}
   ]},
   "name": {"translate": "power.klassen.ability_magier.name"},
   "description": {"translate": "power.klassen.ability_magier.description"}
