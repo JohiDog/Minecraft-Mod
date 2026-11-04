@@ -1,0 +1,18 @@
+{
+  "type": "apoli:active_self",
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  },
+  "cooldown": 600,
+  "entity_action": {
+    "type": "apoli:spawn_entity",
+    "entity_type": "minecraft:blaze"
+  },
+  "name": {
+    "translate": "power.klassen.skill_summon_elemental.name"
+  },
+  "description": {
+    "translate": "power.klassen.skill_summon_elemental.description"
+  }
+}

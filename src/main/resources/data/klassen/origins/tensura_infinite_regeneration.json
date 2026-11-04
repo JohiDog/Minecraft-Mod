@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "klassen:skill_infinite_regeneration"
+  ],
+  "icon": {
+    "item": "minecraft:golden_apple"
+  },
+  "impact": 3,
+  "order": 14,
+  "name": {
+    "translate": "origin.klassen.tensura_infinite_regeneration.name"
+  },
+  "description": {
+    "translate": "origin.klassen.tensura_infinite_regeneration.description"
+  }
+}

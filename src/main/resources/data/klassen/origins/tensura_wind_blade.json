@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "klassen:skill_wind_blade"
+  ],
+  "icon": {
+    "item": "minecraft:feather"
+  },
+  "impact": 2,
+  "order": 21,
+  "name": {
+    "translate": "origin.klassen.tensura_wind_blade.name"
+  },
+  "description": {
+    "translate": "origin.klassen.tensura_wind_blade.description"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "apoli:active_self",
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  },
+  "cooldown": 900,
+  "entity_action": {
+    "type": "apoli:spawn_entity",
+    "entity_type": "minecraft:ravager"
+  },
+  "name": {
+    "translate": "power.klassen.skill_summon_greater_elemental.name"
+  },
+  "description": {
+    "translate": "power.klassen.skill_summon_greater_elemental.description"
+  }
+}

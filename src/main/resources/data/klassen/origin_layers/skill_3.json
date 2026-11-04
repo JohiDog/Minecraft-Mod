@@ -3,20 +3,69 @@
   "enabled": true,
   "origins": [
     {
-      "condition": {"type": "apoli:or", "inverted": true, "conditions": [
-        {"type": "origins:origin", "origin": "klassen:koch", "layer": "klassen:skill_1"},
-        {"type": "origins:origin", "origin": "klassen:koch", "layer": "klassen:skill_2"}
-      ]},
-      "origins": ["klassen:koch"]
+      "condition": {
+        "type": "apoli:or",
+        "inverted": true,
+        "conditions": [
+          {
+            "type": "origins:origin",
+            "origin": "klassen:koch",
+            "layer": "klassen:skill_1"
+          },
+          {
+            "type": "origins:origin",
+            "origin": "klassen:koch",
+            "layer": "klassen:skill_2"
+          }
+        ]
+      },
+      "origins": [
+        "klassen:koch"
+      ]
     },
     {
-      "condition": {"type": "apoli:or", "inverted": true, "conditions": [
-        {"type": "origins:origin", "origin": "klassen:schmied_lehrling", "layer": "klassen:skill_1"},
-        {"type": "origins:origin", "origin": "klassen:schmied_lehrling", "layer": "klassen:skill_2"}
-      ]},
-      "origins": ["klassen:schmied_lehrling"]
-    }
+      "condition": {
+        "type": "apoli:or",
+        "inverted": true,
+        "conditions": [
+          {
+            "type": "origins:origin",
+            "origin": "klassen:schmied_lehrling",
+            "layer": "klassen:skill_1"
+          },
+          {
+            "type": "origins:origin",
+            "origin": "klassen:schmied_lehrling",
+            "layer": "klassen:skill_2"
+          }
+        ]
+      },
+      "origins": [
+        "klassen:schmied_lehrling"
+      ]
+    },
+    "klassen:tensura_predator",
+    "klassen:tensura_gluttony",
+    "klassen:tensura_great_sage",
+    "klassen:tensura_water_breathing",
+    "klassen:tensura_infinite_regeneration",
+    "klassen:tensura_dragon_skin",
+    "klassen:tensura_danger_sense",
+    "klassen:tensura_sniper",
+    "klassen:tensura_fire_ball",
+    "klassen:tensura_water_cutter",
+    "klassen:tensura_earth_spikes",
+    "klassen:tensura_wind_blade",
+    "klassen:tensura_lightning_lance",
+    "klassen:tensura_spirit_sight",
+    "klassen:tensura_soul_armor",
+    "klassen:tensura_necromancy",
+    "klassen:tensura_summon_hound",
+    "klassen:tensura_summon_elemental",
+    "klassen:tensura_summon_greater_elemental"
   ],
   "allow_random": true,
-  "name": {"translate": "layer.klassen.skill_3.name"}
+  "name": {
+    "translate": "layer.klassen.skill_3.name"
+  }
 }

@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "klassen:skill_gluttony"
+  ],
+  "icon": {
+    "item": "minecraft:cake"
+  },
+  "impact": 3,
+  "order": 11,
+  "name": {
+    "translate": "origin.klassen.tensura_gluttony.name"
+  },
+  "description": {
+    "translate": "origin.klassen.tensura_gluttony.description"
+  }
+}

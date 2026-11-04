@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "origins:cat_vision"
+  ],
+  "icon": {
+    "item": "minecraft:ender_pearl"
+  },
+  "impact": 1,
+  "order": 23,
+  "name": {
+    "translate": "origin.klassen.tensura_spirit_sight.name"
+  },
+  "description": {
+    "translate": "origin.klassen.tensura_spirit_sight.description"
+  }
+}

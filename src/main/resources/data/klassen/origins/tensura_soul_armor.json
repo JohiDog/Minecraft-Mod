@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "klassen:skill_soul_armor"
+  ],
+  "icon": {
+    "item": "minecraft:soul_lantern"
+  },
+  "impact": 2,
+  "order": 24,
+  "name": {
+    "translate": "origin.klassen.tensura_soul_armor.name"
+  },
+  "description": {
+    "translate": "origin.klassen.tensura_soul_armor.description"
+  }
+}

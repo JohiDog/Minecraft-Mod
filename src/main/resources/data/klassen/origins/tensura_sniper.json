@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "klassen:skill_sniper"
+  ],
+  "icon": {
+    "item": "minecraft:spyglass"
+  },
+  "impact": 2,
+  "order": 17,
+  "name": {
+    "translate": "origin.klassen.tensura_sniper.name"
+  },
+  "description": {
+    "translate": "origin.klassen.tensura_sniper.description"
+  }
+}

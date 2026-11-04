@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "klassen:skill_predator"
+  ],
+  "icon": {
+    "item": "minecraft:ghast_tear"
+  },
+  "impact": 2,
+  "order": 10,
+  "name": {
+    "translate": "origin.klassen.tensura_predator.name"
+  },
+  "description": {
+    "translate": "origin.klassen.tensura_predator.description"
+  }
+}

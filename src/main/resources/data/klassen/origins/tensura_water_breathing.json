@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "origins:water_breathing"
+  ],
+  "icon": {
+    "item": "minecraft:water_bucket"
+  },
+  "impact": 1,
+  "order": 13,
+  "name": {
+    "translate": "origin.klassen.tensura_water_breathing.name"
+  },
+  "description": {
+    "translate": "origin.klassen.tensura_water_breathing.description"
+  }
+}

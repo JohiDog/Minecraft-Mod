@@ -1,0 +1,13 @@
+{
+  "type": "apoli:modify_experience",
+  "modifier": {
+    "operation": "multiply_total",
+    "value": 2.0
+  },
+  "name": {
+    "translate": "power.klassen.skill_great_sage.name"
+  },
+  "description": {
+    "translate": "power.klassen.skill_great_sage.description"
+  }
+}

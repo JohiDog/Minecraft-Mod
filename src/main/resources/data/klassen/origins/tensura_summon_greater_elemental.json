@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "klassen:skill_summon_greater_elemental"
+  ],
+  "icon": {
+    "item": "minecraft:magma_cream"
+  },
+  "impact": 3,
+  "order": 28,
+  "name": {
+    "translate": "origin.klassen.tensura_summon_greater_elemental.name"
+  },
+  "description": {
+    "translate": "origin.klassen.tensura_summon_greater_elemental.description"
+  }
+}

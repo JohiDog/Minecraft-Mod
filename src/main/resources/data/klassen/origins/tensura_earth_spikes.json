@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "klassen:skill_earth_spikes"
+  ],
+  "icon": {
+    "item": "minecraft:cobblestone"
+  },
+  "impact": 2,
+  "order": 20,
+  "name": {
+    "translate": "origin.klassen.tensura_earth_spikes.name"
+  },
+  "description": {
+    "translate": "origin.klassen.tensura_earth_spikes.description"
+  }
+}

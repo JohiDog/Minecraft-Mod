@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "klassen:skill_lightning_lance"
+  ],
+  "icon": {
+    "item": "minecraft:lightning_rod"
+  },
+  "impact": 3,
+  "order": 22,
+  "name": {
+    "translate": "origin.klassen.tensura_lightning_lance.name"
+  },
+  "description": {
+    "translate": "origin.klassen.tensura_lightning_lance.description"
+  }
+}

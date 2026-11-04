@@ -1,0 +1,14 @@
+{
+  "type": "apoli:action_over_time",
+  "interval": 100,
+  "entity_action": {
+    "type": "apoli:heal",
+    "amount": 1.0
+  },
+  "name": {
+    "translate": "power.klassen.skill_infinite_regeneration.name"
+  },
+  "description": {
+    "translate": "power.klassen.skill_infinite_regeneration.description"
+  }
+}

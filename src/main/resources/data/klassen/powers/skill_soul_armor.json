@@ -1,0 +1,13 @@
+{
+  "type": "apoli:modify_damage_taken",
+  "modifier": {
+    "operation": "multiply_total",
+    "value": 0.7
+  },
+  "name": {
+    "translate": "power.klassen.skill_soul_armor.name"
+  },
+  "description": {
+    "translate": "power.klassen.skill_soul_armor.description"
+  }
+}

@@ -1,7 +1,31 @@
 {
   "order": 2,
   "enabled": true,
-  "origins": ["klassen:koch", "klassen:schmied_lehrling"],
+  "origins": [
+    "klassen:koch",
+    "klassen:schmied_lehrling",
+    "klassen:tensura_predator",
+    "klassen:tensura_gluttony",
+    "klassen:tensura_great_sage",
+    "klassen:tensura_water_breathing",
+    "klassen:tensura_infinite_regeneration",
+    "klassen:tensura_dragon_skin",
+    "klassen:tensura_danger_sense",
+    "klassen:tensura_sniper",
+    "klassen:tensura_fire_ball",
+    "klassen:tensura_water_cutter",
+    "klassen:tensura_earth_spikes",
+    "klassen:tensura_wind_blade",
+    "klassen:tensura_lightning_lance",
+    "klassen:tensura_spirit_sight",
+    "klassen:tensura_soul_armor",
+    "klassen:tensura_necromancy",
+    "klassen:tensura_summon_hound",
+    "klassen:tensura_summon_elemental",
+    "klassen:tensura_summon_greater_elemental"
+  ],
   "allow_random": true,
-  "name": {"translate": "layer.klassen.skill_1.name"}
+  "name": {
+    "translate": "layer.klassen.skill_1.name"
+  }
 }

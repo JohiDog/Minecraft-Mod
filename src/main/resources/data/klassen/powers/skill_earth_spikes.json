@@ -1,0 +1,23 @@
+{
+  "type": "apoli:active_self",
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  },
+  "cooldown": 250,
+  "entity_action": {
+    "type": "apoli:area_of_effect",
+    "radius": 5,
+    "bientity_action": {
+      "type": "apoli:damage",
+      "amount": 12,
+      "damage_type": "minecraft:magic"
+    }
+  },
+  "name": {
+    "translate": "power.klassen.skill_earth_spikes.name"
+  },
+  "description": {
+    "translate": "power.klassen.skill_earth_spikes.description"
+  }
+}

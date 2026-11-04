@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "klassen:skill_water_cutter"
+  ],
+  "icon": {
+    "item": "minecraft:prismarine_shard"
+  },
+  "impact": 2,
+  "order": 19,
+  "name": {
+    "translate": "origin.klassen.tensura_water_cutter.name"
+  },
+  "description": {
+    "translate": "origin.klassen.tensura_water_cutter.description"
+  }
+}

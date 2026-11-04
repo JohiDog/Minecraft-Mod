@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "klassen:skill_summon_hound"
+  ],
+  "icon": {
+    "item": "minecraft:bone"
+  },
+  "impact": 1,
+  "order": 26,
+  "name": {
+    "translate": "origin.klassen.tensura_summon_hound.name"
+  },
+  "description": {
+    "translate": "origin.klassen.tensura_summon_hound.description"
+  }
+}

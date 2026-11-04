@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "origins:cat_vision"
+  ],
+  "icon": {
+    "item": "minecraft:ender_eye"
+  },
+  "impact": 1,
+  "order": 16,
+  "name": {
+    "translate": "origin.klassen.tensura_danger_sense.name"
+  },
+  "description": {
+    "translate": "origin.klassen.tensura_danger_sense.description"
+  }
+}

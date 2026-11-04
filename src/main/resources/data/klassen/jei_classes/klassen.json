@@ -1,10 +1,67 @@
 {
   "entries": [
-    {"icon": "minecraft:wooden_sword", "title": "jei.klassen.entry.krieger", "lines": ["jei.klassen.req.klasse_krieger_lehrling", "jei.klassen.req.klasse_krieger", "jei.klassen.req.klasse_kampfmeister"]},
-    {"icon": "minecraft:book", "title": "jei.klassen.entry.magier", "lines": ["jei.klassen.req.klasse_magier_lehrling", "jei.klassen.req.klasse_erfahrener_magier", "jei.klassen.req.klasse_erzmagier"]},
-    {"icon": "minecraft:bow", "title": "jei.klassen.entry.bogenschuetze", "lines": ["jei.klassen.req.klasse_bogenschuetze", "jei.klassen.req.klasse_schuetze", "jei.klassen.req.klasse_meisterschuetze"]},
-    {"icon": "minecraft:carrot", "title": "jei.klassen.entry.koch", "lines": ["jei.klassen.req.klasse_koch", "jei.klassen.req.klasse_chef", "jei.klassen.req.klasse_sanji"]},
-    {"icon": "minecraft:iron_pickaxe", "title": "jei.klassen.entry.schmied", "lines": ["jei.klassen.req.klasse_schmied_lehrling", "jei.klassen.req.klasse_schmied", "jei.klassen.req.klasse_himmelsschmied"]},
-    {"icon": "minecraft:shield", "title": "jei.klassen.entry.paladin", "lines": ["jei.klassen.req.race_mensch", "jei.klassen.req.klasse_paladin"]}
+    {
+      "icon": "minecraft:wooden_sword",
+      "title": "jei.klassen.entry.krieger",
+      "lines": [
+        "jei.klassen.req.klasse_krieger_lehrling",
+        "jei.klassen.req.klasse_krieger",
+        "jei.klassen.req.klasse_kampfmeister"
+      ]
+    },
+    {
+      "icon": "minecraft:book",
+      "title": "jei.klassen.entry.magier",
+      "lines": [
+        "jei.klassen.req.klasse_magier_lehrling",
+        "jei.klassen.req.klasse_erfahrener_magier",
+        "jei.klassen.req.klasse_erzmagier"
+      ]
+    },
+    {
+      "icon": "minecraft:bow",
+      "title": "jei.klassen.entry.bogenschuetze",
+      "lines": [
+        "jei.klassen.req.klasse_bogenschuetze",
+        "jei.klassen.req.klasse_schuetze",
+        "jei.klassen.req.klasse_meisterschuetze"
+      ]
+    },
+    {
+      "icon": "minecraft:carrot",
+      "title": "jei.klassen.entry.koch",
+      "lines": [
+        "jei.klassen.req.klasse_koch",
+        "jei.klassen.req.klasse_chef",
+        "jei.klassen.req.klasse_sanji"
+      ]
+    },
+    {
+      "icon": "minecraft:iron_pickaxe",
+      "title": "jei.klassen.entry.schmied",
+      "lines": [
+        "jei.klassen.req.klasse_schmied_lehrling",
+        "jei.klassen.req.klasse_schmied",
+        "jei.klassen.req.klasse_himmelsschmied"
+      ]
+    },
+    {
+      "icon": "minecraft:shield",
+      "title": "jei.klassen.entry.paladin",
+      "lines": [
+        "jei.klassen.req.race_mensch",
+        "jei.klassen.req.klasse_paladin"
+      ]
+    },
+    {
+      "icon": "minecraft:nether_star",
+      "title": "jei.klassen.entry.tensura",
+      "lines": [
+        "jei.klassen.req.tensura_intrinsic",
+        "jei.klassen.req.tensura_aspectual",
+        "jei.klassen.req.tensura_spiritual",
+        "jei.klassen.req.tensura_summoning"
+      ]
+    }
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "powers": [
+    "klassen:skill_great_sage"
+  ],
+  "icon": {
+    "item": "minecraft:knowledge_book"
+  },
+  "impact": 3,
+  "order": 12,
+  "name": {
+    "translate": "origin.klassen.tensura_great_sage.name"
+  },
+  "description": {
+    "translate": "origin.klassen.tensura_great_sage.description"
+  }
+}

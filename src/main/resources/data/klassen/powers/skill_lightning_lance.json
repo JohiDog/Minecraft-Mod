@@ -1,0 +1,23 @@
+{
+  "type": "apoli:active_self",
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  },
+  "cooldown": 300,
+  "entity_action": {
+    "type": "apoli:area_of_effect",
+    "radius": 6,
+    "bientity_action": {
+      "type": "apoli:damage",
+      "amount": 14,
+      "damage_type": "minecraft:magic"
+    }
+  },
+  "name": {
+    "translate": "power.klassen.skill_lightning_lance.name"
+  },
+  "description": {
+    "translate": "power.klassen.skill_lightning_lance.description"
+  }
+}

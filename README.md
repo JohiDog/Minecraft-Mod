@@ -14,7 +14,7 @@ Rezepte sind hinter Klasse/Tier gelockt).
 
 1. Voraussetzung: Minecraft **1.20.2** mit Fabric Loader >= 0.15.10, dazu die Mods
    **Origins 1.12.10** (liefert Apoli/Calio gleich mit) und **Fabric API 0.91.6+1.20.2**.
-2. Jar ist fertig in `dist/klassen-framework-1.3.0+1.20.2.jar` – in den `mods/`-Ordner legen. Neu bauen (JDK 17 noetig): `./tools/build-jar.sh` (= `./gradlew build`).
+2. Jar ist fertig in `dist/klassen-framework-1.4.0+1.20.2.jar` – in den `mods/`-Ordner legen. Neu bauen (JDK 17 noetig): `./tools/build-jar.sh` (= `./gradlew build`).
 3. Neue Welt erstellen -> Auswahl-Reihenfolge: **Rasse -> Klasse -> Skill 1 -> Skill 2 -> Skill 3**
    (die vanilla `origins:origin`-Schicht ist abgeschaltet, siehe `data/origins/origin_layers/origin.json`;
    zum Re-Aktivieren Datei loeschen oder `"enabled": true` setzen).
@@ -36,6 +36,7 @@ Rezepte sind hinter Klasse/Tier gelockt).
 - **Rassenbaum:** 3 wählbare Rassen (Goblin, Mensch, Gnom) mit Evolutions-Ketten (z.B. Goblin → Brute → Hob → Orc → Oni; Goblin → Tiefling → Fiend → Dämon → Diablo; Mensch → Erhobener → Engel → Halbgott → Gott; Engel → Likanon → Werwolf → Apex; Gnom → Zwerg → Bergvater → Steinriese → Titane; Zwerg → Golem → Runengolem → Elementarriese; Zwerg → Grabvater → Banshee → Todesvater).
 - **Uebersicht mit X:** Taste **`X`** oeffnet die Klassen-Uebersicht: alle Layer (Rasse/Klasse/Skills), jede Origin mit Icon, Impact, aktuell gewaehlt (gruen) und Aufstiegs-Kette (Advancement -> Ziel).
 - **JEI-Requirements:** Mit JEI installiert: auf ein Item in JEI klicken (z.B. Diamantschwert) -> Kategorie "Anforderungen" zeigt, welche Rasse/Klasse noetig ist. Zusaetzlicher JEI-Tab **"Klassen & Mindest-Stufen"** listet alle Klassen mit ihren Stufen. Eintraege: `data/klassen/jei_requirements/*.json` und `data/klassen/jei_classes/*.json`.
+- **Tensura-Skills (19 Skills in allen 3 Skill-Slots wählbar):** Intrinsic (Prädator, Gefräßigkeit, Gr. Weiser, Wasseratmung, Unendliche Regeneration, Drachenhaut, Gefahrensinn, Scharfschütze), Aspectual Magic (Feuerball, Wasserschneider, Erdspitzen, Windklinge, Blitzlanze – aktive AoE-Zauber auf G), Spiritual (Geistblick, Seelenrüstung, Nekromantie), Summoning (Hund, Elementar, Gr. Elementar – beschwören auf G). JEI-Tab listet alle Kategorien.
 - **Klassen-Faehigkeit links der Hotbar:** HUD zeigt links neben der Hotbar deine aktuelle Klasse + aktive Faehigkeit; mit **G** ausloesen (jede Klasse hat eine: Krieger=Staerke, Magier=Nachtsicht+Leuchten, Bogenschuetze=Schnelligkeit, Koch=Saettigung, Schmied=Eile, Paladin=Resistenz).
 
 ## Aufbau
