@@ -1,0 +1,29 @@
+{
+  "powers": [
+    "origins:strong_arms",
+    "origins:natural_armor"
+  ],
+  "icon": {
+    "item": "minecraft:feather"
+  },
+  "impact": 2,
+  "name": {
+    "translate": "origin.klassen.engel.name"
+  },
+  "description": {
+    "translate": "origin.klassen.engel.description"
+  },
+  "unchoosable": true,
+  "upgrades": [
+    {
+      "condition": "klassen:evolution/engel_halbgott",
+      "origin": "klassen:halbgott",
+      "announcement": "announcement.klassen.halbgott"
+    },
+    {
+      "condition": "klassen:evolution/engel_likanon",
+      "origin": "klassen:likanon",
+      "announcement": "announcement.klassen.likanon"
+    }
+  ]
+}

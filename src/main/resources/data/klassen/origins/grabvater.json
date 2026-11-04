@@ -1,0 +1,23 @@
+{
+  "powers": [
+    "origins:strong_arms"
+  ],
+  "icon": {
+    "item": "minecraft:soul_lantern"
+  },
+  "impact": 1,
+  "name": {
+    "translate": "origin.klassen.grabvater.name"
+  },
+  "description": {
+    "translate": "origin.klassen.grabvater.description"
+  },
+  "unchoosable": true,
+  "upgrades": [
+    {
+      "condition": "klassen:evolution/grabvater_banshee",
+      "origin": "klassen:banshee",
+      "announcement": "announcement.klassen.banshee"
+    }
+  ]
+}

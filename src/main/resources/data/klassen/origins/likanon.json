@@ -1,0 +1,23 @@
+{
+  "powers": [
+    "origins:strong_arms"
+  ],
+  "icon": {
+    "item": "minecraft:bone"
+  },
+  "impact": 1,
+  "name": {
+    "translate": "origin.klassen.likanon.name"
+  },
+  "description": {
+    "translate": "origin.klassen.likanon.description"
+  },
+  "unchoosable": true,
+  "upgrades": [
+    {
+      "condition": "klassen:evolution/likanon_werwolf",
+      "origin": "klassen:werwolf",
+      "announcement": "announcement.klassen.werwolf"
+    }
+  ]
+}

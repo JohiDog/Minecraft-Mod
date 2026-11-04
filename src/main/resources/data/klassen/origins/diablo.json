@@ -1,0 +1,19 @@
+{
+  "powers": [
+    "origins:strong_arms",
+    "origins:natural_armor",
+    "origins:scare_creepers",
+    "origins:more_kinetic_damage"
+  ],
+  "icon": {
+    "item": "minecraft:beacon"
+  },
+  "impact": 3,
+  "name": {
+    "translate": "origin.klassen.diablo.name"
+  },
+  "description": {
+    "translate": "origin.klassen.diablo.description"
+  },
+  "unchoosable": true
+}

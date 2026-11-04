@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    "title": {
+      "translate": "advancements.klassen.evolution.tiefling_fiend.title"
+    },
+    "description": {
+      "translate": "advancements.klassen.evolution.tiefling_fiend.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "req": {
+      "trigger": "minecraft:adventure/trade"
+    }
+  },
+  "requirements": [
+    [
+      "req"
+    ]
+  ]
+}

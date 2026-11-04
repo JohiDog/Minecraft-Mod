@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:soul_lantern"
+    },
+    "title": {
+      "translate": "advancements.klassen.evolution.zwerg_grabvater.title"
+    },
+    "description": {
+      "translate": "advancements.klassen.evolution.zwerg_grabvater.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "req": {
+      "trigger": "minecraft:husbandry/tame_an_animal"
+    }
+  },
+  "requirements": [
+    [
+      "req"
+    ]
+  ]
+}

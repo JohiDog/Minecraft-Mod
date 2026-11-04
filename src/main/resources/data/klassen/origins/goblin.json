@@ -1,11 +1,26 @@
 {
-  "powers": ["origins:strong_arms"],
-  "icon": {"item": "minecraft:iron_sword"},
-  "impact": 1,
+  "powers": [],
+  "icon": {
+    "item": "minecraft:iron_sword"
+  },
+  "impact": 0,
+  "name": {
+    "translate": "origin.klassen.goblin.name"
+  },
+  "description": {
+    "translate": "origin.klassen.goblin.description"
+  },
   "order": 1,
-  "name": {"translate": "origin.klassen.goblin.name"},
-  "description": {"translate": "origin.klassen.goblin.description"},
   "upgrades": [
-    {"condition": "klassen:evolution/goblin_brute", "origin": "klassen:goblin_brute", "announcement": "announcement.klassen.goblin_brute"}
+    {
+      "condition": "klassen:evolution/goblin_goblin_brute",
+      "origin": "klassen:goblin_brute",
+      "announcement": "announcement.klassen.goblin_brute"
+    },
+    {
+      "condition": "klassen:evolution/goblin_tiefling",
+      "origin": "klassen:tiefling",
+      "announcement": "announcement.klassen.tiefling"
+    }
   ]
 }

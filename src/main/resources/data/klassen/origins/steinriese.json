@@ -1,0 +1,25 @@
+{
+  "powers": [
+    "origins:strong_arms",
+    "origins:natural_armor",
+    "origins:scare_creepers"
+  ],
+  "icon": {
+    "item": "minecraft:cobblestone"
+  },
+  "impact": 3,
+  "name": {
+    "translate": "origin.klassen.steinriese.name"
+  },
+  "description": {
+    "translate": "origin.klassen.steinriese.description"
+  },
+  "unchoosable": true,
+  "upgrades": [
+    {
+      "condition": "klassen:evolution/steinriese_titane",
+      "origin": "klassen:titane",
+      "announcement": "announcement.klassen.titane"
+    }
+  ]
+}

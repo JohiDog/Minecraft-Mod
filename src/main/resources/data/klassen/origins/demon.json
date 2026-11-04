@@ -1,0 +1,25 @@
+{
+  "powers": [
+    "origins:strong_arms",
+    "origins:natural_armor",
+    "origins:scare_creepers"
+  ],
+  "icon": {
+    "item": "minecraft:netherite_sword"
+  },
+  "impact": 3,
+  "name": {
+    "translate": "origin.klassen.demon.name"
+  },
+  "description": {
+    "translate": "origin.klassen.demon.description"
+  },
+  "unchoosable": true,
+  "upgrades": [
+    {
+      "condition": "klassen:evolution/demon_diablo",
+      "origin": "klassen:diablo",
+      "announcement": "announcement.klassen.diablo"
+    }
+  ]
+}

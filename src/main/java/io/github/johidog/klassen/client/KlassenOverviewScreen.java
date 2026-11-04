@@ -14,6 +14,7 @@ import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -47,11 +48,12 @@ public class KlassenOverviewScreen extends Screen {
             ? Origin.get(client.player)
             : Map.of();
 
-        int y = 26;
+        int y = 28;
         for (OriginLayer layer : layers) {
             if (layer.isHidden()) continue;
+            graphics.fill(16, y - 2, width - 16, y + 10, 0x40303030);
             graphics.drawString(font, layer.getName(), 20, y, 0x55FFFF, false);
-            y += 12;
+            y += 14;
             for (ResourceLocation originId : layer.getOrigins()) {
                 Origin origin;
                 try {
@@ -61,36 +63,44 @@ public class KlassenOverviewScreen extends Screen {
                 }
                 Origin selected = current.get(layer);
                 boolean isSelected = selected != null && selected.equals(origin);
-                int color = isSelected ? 0x55FF55 : 0xCCCCCC;
+                int color = isSelected ? 0x55FF55 : 0xDDDDDD;
+
                 graphics.renderItem(origin.getDisplayItem(), 22, y);
-                graphics.drawString(font,
-                    Component.translatable("screen.klassen.overview.entry", origin.getName(), origin.getImpact()),
-                    44, y + 4, color, false);
-                y += 16;
-                JsonObject json = origin.toJson();
-                JsonArray upgrades = json.has("upgrades") && json.get("upgrades").isJsonArray()
-                    ? json.getAsJsonArray("upgrades") : null;
-                if (upgrades != null) {
-                    for (JsonElement el : upgrades) {
-                        JsonObject up = el.getAsJsonObject();
-                        ResourceLocation targetId = new ResourceLocation(up.get("origin").getAsString());
-                        Origin target;
-                        try {
-                            target = OriginRegistry.get(targetId);
-                        } catch (IllegalArgumentException e) {
-                            target = null;
-                        }
-                        Component line = Component.translatable("screen.klassen.overview.upgrade",
-                            target != null ? target.getName() : Component.literal(targetId.toString()),
-                            up.get("condition").getAsString());
-                        graphics.drawString(font, line, 48, y, 0xFFAA00, false);
-                        y += 10;
-                    }
+                Component name = Component.translatable("screen.klassen.overview.entry", origin.getName(), origin.getImpact());
+                graphics.drawString(font, name, 44, y + 4, color, false);
+
+                List<String> next = upgradeTargets(origin);
+                if (!next.isEmpty()) {
+                    int nx = 44 + font.width(name) + 8;
+                    graphics.drawString(font, Component.literal("→ " + String.join(" / ", next)), nx, y + 4, 0xFFAA00, false);
                 }
+                if (isSelected) {
+                    graphics.drawString(font, Component.literal("✔"), 20 + 190, y + 4, 0x55FF55, false);
+                }
+                y += 17;
             }
-            y += 6;
+            y += 8;
             if (y > height - 40) break;
         }
+    }
+
+    private static List<String> upgradeTargets(Origin origin) {
+        List<String> out = new ArrayList<>();
+        JsonObject json = origin.toJson();
+        if (json.has("upgrades") && json.get("upgrades").isJsonArray()) {
+            JsonArray upgrades = json.getAsJsonArray("upgrades");
+            for (JsonElement el : upgrades) {
+                JsonObject up = el.getAsJsonObject();
+                ResourceLocation targetId = new ResourceLocation(up.get("origin").getAsString());
+                try {
+                    Origin target = OriginRegistry.get(targetId);
+                    out.add(target.getName().getString());
+                } catch (IllegalArgumentException e) {
+                    out.add(targetId.toString());
+                }
+            }
+        }
+        return out;
     }
 
     @Override

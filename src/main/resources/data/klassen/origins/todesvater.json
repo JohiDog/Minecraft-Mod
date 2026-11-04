@@ -1,0 +1,18 @@
+{
+  "powers": [
+    "origins:strong_arms",
+    "origins:natural_armor",
+    "origins:scare_creepers"
+  ],
+  "icon": {
+    "item": "minecraft:wither_rose"
+  },
+  "impact": 3,
+  "name": {
+    "translate": "origin.klassen.todesvater.name"
+  },
+  "description": {
+    "translate": "origin.klassen.todesvater.description"
+  },
+  "unchoosable": true
+}

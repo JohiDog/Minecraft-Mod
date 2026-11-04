@@ -1,0 +1,21 @@
+{
+  "powers": [],
+  "icon": {
+    "item": "minecraft:wooden_hoe"
+  },
+  "impact": 0,
+  "name": {
+    "translate": "origin.klassen.gnom.name"
+  },
+  "description": {
+    "translate": "origin.klassen.gnom.description"
+  },
+  "order": 3,
+  "upgrades": [
+    {
+      "condition": "klassen:evolution/gnom_zwerg",
+      "origin": "klassen:zwerg",
+      "announcement": "announcement.klassen.zwerg"
+    }
+  ]
+}

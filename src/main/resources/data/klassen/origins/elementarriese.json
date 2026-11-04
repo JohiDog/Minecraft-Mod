@@ -1,0 +1,18 @@
+{
+  "powers": [
+    "origins:strong_arms",
+    "origins:natural_armor",
+    "origins:scare_creepers"
+  ],
+  "icon": {
+    "item": "minecraft:magma_block"
+  },
+  "impact": 3,
+  "name": {
+    "translate": "origin.klassen.elementarriese.name"
+  },
+  "description": {
+    "translate": "origin.klassen.elementarriese.description"
+  },
+  "unchoosable": true
+}

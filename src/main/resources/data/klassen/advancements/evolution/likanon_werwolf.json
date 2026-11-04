@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:ghast_tear"
+    },
+    "title": {
+      "translate": "advancements.klassen.evolution.likanon_werwolf.title"
+    },
+    "description": {
+      "translate": "advancements.klassen.evolution.likanon_werwolf.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "req": {
+      "trigger": "minecraft:adventure/voluntary_exile"
+    }
+  },
+  "requirements": [
+    [
+      "req"
+    ]
+  ]
+}

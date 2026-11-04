@@ -1,0 +1,23 @@
+{
+  "powers": [
+    "origins:strong_arms"
+  ],
+  "icon": {
+    "item": "minecraft:iron_block"
+  },
+  "impact": 1,
+  "name": {
+    "translate": "origin.klassen.golem.name"
+  },
+  "description": {
+    "translate": "origin.klassen.golem.description"
+  },
+  "unchoosable": true,
+  "upgrades": [
+    {
+      "condition": "klassen:evolution/golem_runengolem",
+      "origin": "klassen:runengolem",
+      "announcement": "announcement.klassen.runengolem"
+    }
+  ]
+}

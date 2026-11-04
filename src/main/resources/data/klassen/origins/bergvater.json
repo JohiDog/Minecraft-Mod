@@ -1,0 +1,24 @@
+{
+  "powers": [
+    "origins:strong_arms",
+    "origins:natural_armor"
+  ],
+  "icon": {
+    "item": "minecraft:deepslate"
+  },
+  "impact": 2,
+  "name": {
+    "translate": "origin.klassen.bergvater.name"
+  },
+  "description": {
+    "translate": "origin.klassen.bergvater.description"
+  },
+  "unchoosable": true,
+  "upgrades": [
+    {
+      "condition": "klassen:evolution/bergvater_steinriese",
+      "origin": "klassen:steinriese",
+      "announcement": "announcement.klassen.steinriese"
+    }
+  ]
+}

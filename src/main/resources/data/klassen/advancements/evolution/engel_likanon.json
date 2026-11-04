@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:bone"
+    },
+    "title": {
+      "translate": "advancements.klassen.evolution.engel_likanon.title"
+    },
+    "description": {
+      "translate": "advancements.klassen.evolution.engel_likanon.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "req": {
+      "trigger": "minecraft:adventure/adventuring_time"
+    }
+  },
+  "requirements": [
+    [
+      "req"
+    ]
+  ]
+}

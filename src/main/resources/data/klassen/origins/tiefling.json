@@ -1,0 +1,23 @@
+{
+  "powers": [
+    "origins:strong_arms"
+  ],
+  "icon": {
+    "item": "minecraft:blaze_rod"
+  },
+  "impact": 1,
+  "name": {
+    "translate": "origin.klassen.tiefling.name"
+  },
+  "description": {
+    "translate": "origin.klassen.tiefling.description"
+  },
+  "unchoosable": true,
+  "upgrades": [
+    {
+      "condition": "klassen:evolution/tiefling_fiend",
+      "origin": "klassen:fiend",
+      "announcement": "announcement.klassen.fiend"
+    }
+  ]
+}

@@ -1,11 +1,26 @@
 {
   "powers": [],
-  "icon": {"item": "minecraft:apple"},
+  "icon": {
+    "item": "minecraft:apple"
+  },
   "impact": 0,
+  "name": {
+    "translate": "origin.klassen.mensch.name"
+  },
+  "description": {
+    "translate": "origin.klassen.mensch.description"
+  },
   "order": 2,
-  "name": {"translate": "origin.klassen.mensch.name"},
-  "description": {"translate": "origin.klassen.mensch.description"},
   "upgrades": [
-    {"condition": "klassen:evolution/erhobener_mensch", "origin": "klassen:erhobener_mensch", "announcement": "announcement.klassen.erhobener_mensch"}
+    {
+      "condition": "klassen:evolution/mensch_erhobener_mensch",
+      "origin": "klassen:erhobener_mensch",
+      "announcement": "announcement.klassen.erhobener_mensch"
+    },
+    {
+      "condition": "klassen:evolution/mensch_fiend",
+      "origin": "klassen:fiend",
+      "announcement": "announcement.klassen.fiend"
+    }
   ]
 }

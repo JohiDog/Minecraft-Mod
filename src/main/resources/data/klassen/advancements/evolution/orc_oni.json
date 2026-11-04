@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:netherite_axe"
+    },
+    "title": {
+      "translate": "advancements.klassen.evolution.orc_oni.title"
+    },
+    "description": {
+      "translate": "advancements.klassen.evolution.orc_oni.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "req": {
+      "trigger": "minecraft:adventure/arbalistic"
+    }
+  },
+  "requirements": [
+    [
+      "req"
+    ]
+  ]
+}

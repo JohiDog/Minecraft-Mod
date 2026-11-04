@@ -1,0 +1,25 @@
+{
+  "powers": [
+    "origins:strong_arms",
+    "origins:natural_armor",
+    "origins:scare_creepers"
+  ],
+  "icon": {
+    "item": "minecraft:stone_axe"
+  },
+  "impact": 3,
+  "name": {
+    "translate": "origin.klassen.orc.name"
+  },
+  "description": {
+    "translate": "origin.klassen.orc.description"
+  },
+  "unchoosable": true,
+  "upgrades": [
+    {
+      "condition": "klassen:evolution/orc_oni",
+      "origin": "klassen:oni",
+      "announcement": "announcement.klassen.oni"
+    }
+  ]
+}

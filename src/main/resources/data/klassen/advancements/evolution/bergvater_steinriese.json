@@ -1,0 +1,27 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {
+      "item": "minecraft:cobblestone"
+    },
+    "title": {
+      "translate": "advancements.klassen.evolution.bergvater_steinriese.title"
+    },
+    "description": {
+      "translate": "advancements.klassen.evolution.bergvater_steinriese.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "req": {
+      "trigger": "minecraft:adventure/trade"
+    }
+  },
+  "requirements": [
+    [
+      "req"
+    ]
+  ]
+}

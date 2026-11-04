@@ -1,0 +1,19 @@
+{
+  "powers": [
+    "origins:strong_arms",
+    "origins:natural_armor",
+    "origins:scare_creepers",
+    "origins:more_kinetic_damage"
+  ],
+  "icon": {
+    "item": "minecraft:netherite_axe"
+  },
+  "impact": 3,
+  "name": {
+    "translate": "origin.klassen.oni.name"
+  },
+  "description": {
+    "translate": "origin.klassen.oni.description"
+  },
+  "unchoosable": true
+}

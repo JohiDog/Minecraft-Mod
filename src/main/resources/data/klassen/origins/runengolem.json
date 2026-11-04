@@ -1,0 +1,24 @@
+{
+  "powers": [
+    "origins:strong_arms",
+    "origins:natural_armor"
+  ],
+  "icon": {
+    "item": "minecraft:enchanted_book"
+  },
+  "impact": 2,
+  "name": {
+    "translate": "origin.klassen.runengolem.name"
+  },
+  "description": {
+    "translate": "origin.klassen.runengolem.description"
+  },
+  "unchoosable": true,
+  "upgrades": [
+    {
+      "condition": "klassen:evolution/runengolem_elementarriese",
+      "origin": "klassen:elementarriese",
+      "announcement": "announcement.klassen.elementarriese"
+    }
+  ]
+}

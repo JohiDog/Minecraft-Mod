@@ -1,11 +1,23 @@
 {
-  "powers": ["origins:strong_arms", "origins:natural_armor"],
-  "icon": {"item": "minecraft:iron_axe"},
+  "powers": [
+    "origins:strong_arms"
+  ],
+  "icon": {
+    "item": "minecraft:iron_axe"
+  },
+  "impact": 1,
+  "name": {
+    "translate": "origin.klassen.goblin_brute.name"
+  },
+  "description": {
+    "translate": "origin.klassen.goblin_brute.description"
+  },
   "unchoosable": true,
-  "impact": 2,
-  "name": {"translate": "origin.klassen.goblin_brute.name"},
-  "description": {"translate": "origin.klassen.goblin_brute.description"},
   "upgrades": [
-    {"condition": "klassen:evolution/goblin_hob", "origin": "klassen:goblin_hob", "announcement": "announcement.klassen.goblin_hob"}
+    {
+      "condition": "klassen:evolution/goblin_brute_goblin_hob",
+      "origin": "klassen:goblin_hob",
+      "announcement": "announcement.klassen.goblin_hob"
+    }
   ]
 }

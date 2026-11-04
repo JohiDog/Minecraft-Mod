@@ -1,11 +1,23 @@
 {
-  "powers": ["origins:water_breathing", "origins:water_vision"],
-  "icon": {"item": "minecraft:diamond"},
-  "unchoosable": true,
+  "powers": [
+    "origins:strong_arms"
+  ],
+  "icon": {
+    "item": "minecraft:diamond"
+  },
   "impact": 1,
-  "name": {"translate": "origin.klassen.erhobener_mensch.name"},
-  "description": {"translate": "origin.klassen.erhobener_mensch.description"},
+  "name": {
+    "translate": "origin.klassen.erhobener_mensch.name"
+  },
+  "description": {
+    "translate": "origin.klassen.erhobener_mensch.description"
+  },
+  "unchoosable": true,
   "upgrades": [
-    {"condition": "klassen:evolution/halbgott", "origin": "klassen:halbgott", "announcement": "announcement.klassen.halbgott"}
+    {
+      "condition": "klassen:evolution/erhobener_mensch_engel",
+      "origin": "klassen:engel",
+      "announcement": "announcement.klassen.engel"
+    }
   ]
 }

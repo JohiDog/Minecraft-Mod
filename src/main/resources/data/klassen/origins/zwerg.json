@@ -1,0 +1,33 @@
+{
+  "powers": [
+    "origins:strong_arms"
+  ],
+  "icon": {
+    "item": "minecraft:iron_pickaxe"
+  },
+  "impact": 1,
+  "name": {
+    "translate": "origin.klassen.zwerg.name"
+  },
+  "description": {
+    "translate": "origin.klassen.zwerg.description"
+  },
+  "unchoosable": true,
+  "upgrades": [
+    {
+      "condition": "klassen:evolution/zwerg_bergvater",
+      "origin": "klassen:bergvater",
+      "announcement": "announcement.klassen.bergvater"
+    },
+    {
+      "condition": "klassen:evolution/zwerg_golem",
+      "origin": "klassen:golem",
+      "announcement": "announcement.klassen.golem"
+    },
+    {
+      "condition": "klassen:evolution/zwerg_grabvater",
+      "origin": "klassen:grabvater",
+      "announcement": "announcement.klassen.grabvater"
+    }
+  ]
+}
