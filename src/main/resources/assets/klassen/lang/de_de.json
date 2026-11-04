@@ -376,5 +376,11 @@
   "jei.klassen.req.tensura_spiritual": "Spiritual: Geistblick, Seelenrüstung, Nekromantie",
   "jei.klassen.req.tensura_summoning": "Summoning: Hund, Elementar, Gr. Elementar",
   "screen.klassen.progress": "Aufstieg zu %s: %s",
-  "screen.klassen.progress.max": "Maximale Stufe erreicht"
+  "screen.klassen.progress.max": "Maximale Stufe erreicht",
+  "tooltip.klassen.req.header": "⛨ Klassen-Anforderung",
+  "tooltip.klassen.req.bogen": "Nur Bogenschützen (Anfänger → Schütze → Meisterschütze)",
+  "tooltip.klassen.req.schwerter": "Nur Schmiede oder Krieger",
+  "tooltip.klassen.req.magie_waffen": "Nur Magier (Lehrling → Erzmagier)",
+  "tooltip.klassen.req.farmers_delight": "Nur Köche (Koch → Chef → Sanji)",
+  "tooltip.klassen.req.diamond_sword": "Rasse: mindestens Erhobener Mensch"
 }

@@ -14,7 +14,7 @@ Rezepte sind hinter Klasse/Tier gelockt).
 
 1. Voraussetzung: Minecraft **1.20.1** mit Fabric Loader >= 0.15.10, dazu die Mods
    **Origins 1.10.1** (liefert Apoli/Calio gleich mit) und **Fabric API 0.92.12+1.20.1**.
-2. Jar ist fertig in `dist/klassen-framework-1.6.2+1.20.1.jar` – in den `mods/`-Ordner legen. Neu bauen (JDK 17 noetig): `./tools/build-jar.sh` (= `./gradlew build`).
+2. Jar ist fertig in `dist/klassen-framework-1.7.0+1.20.1.jar` – in den `mods/`-Ordner legen. Neu bauen (JDK 17 noetig): `./tools/build-jar.sh` (= `./gradlew build`).
 3. Neue Welt erstellen -> Auswahl-Reihenfolge: **Rasse -> Klasse -> Skill 1 -> Skill 2 -> Skill 3**
    (die vanilla `origins:origin`-Schicht ist abgeschaltet, siehe `data/origins/origin_layers/origin.json`;
    zum Re-Aktivieren Datei loeschen oder `"enabled": true` setzen).

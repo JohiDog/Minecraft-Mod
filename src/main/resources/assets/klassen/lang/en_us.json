@@ -376,5 +376,11 @@
   "jei.klassen.req.tensura_spiritual": "Spiritual: Spirit Sight, Soul Armor, Necromancy",
   "jei.klassen.req.tensura_summoning": "Summoning: Hound, Elemental, Greater Elemental",
   "screen.klassen.progress": "Ascension to %s: %s",
-  "screen.klassen.progress.max": "Max tier reached"
+  "screen.klassen.progress.max": "Max tier reached",
+  "tooltip.klassen.req.header": "⛨ Class requirement",
+  "tooltip.klassen.req.bogen": "Archers only (Novice → Shooter → Master)",
+  "tooltip.klassen.req.schwerter": "Smiths or Warriors only",
+  "tooltip.klassen.req.magie_waffen": "Mages only (Apprentice → Archmage)",
+  "tooltip.klassen.req.farmers_delight": "Cooks only (Cook → Chef → Sanji)",
+  "tooltip.klassen.req.diamond_sword": "Race: at least Ascended Human"
 }
