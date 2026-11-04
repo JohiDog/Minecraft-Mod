@@ -4,6 +4,7 @@
   "origins": [
     "klassen:magier_lehrling",
     "klassen:bogenschuetze_anfaenger",
+    "klassen:krieger_lehrling",
     {
       "condition": {"type": "origins:origin", "origin": "klassen:mensch", "layer": "klassen:race"},
       "origins": ["klassen:paladin"]

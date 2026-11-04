@@ -1,0 +1,11 @@
+{
+  "powers": ["klassen:krieger_stark_1"],
+  "icon": {"item": "minecraft:wooden_sword"},
+  "impact": 1,
+  "order": 4,
+  "name": {"translate": "origin.klassen.krieger_lehrling.name"},
+  "description": {"translate": "origin.klassen.krieger_lehrling.description"},
+  "upgrades": [
+    {"condition": "klassen:evolution/krieger", "origin": "klassen:krieger", "announcement": "announcement.klassen.krieger"}
+  ]
+}

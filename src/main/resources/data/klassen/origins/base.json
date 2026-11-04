@@ -3,11 +3,18 @@
     "klassen:lock_farmers_delight",
     "klassen:lock_magic_weapons",
     "klassen:lock_bows",
-    "klassen:lock_swords"
+    "klassen:lock_swords",
+    "klassen:lock_diamond_sword"
   ],
-  "icon": {"item": "minecraft:barrier"},
+  "icon": {
+    "item": "minecraft:barrier"
+  },
   "unchoosable": true,
   "impact": 0,
-  "name": {"translate": "origin.klassen.base.name"},
-  "description": {"translate": "origin.klassen.base.description"}
+  "name": {
+    "translate": "origin.klassen.base.name"
+  },
+  "description": {
+    "translate": "origin.klassen.base.description"
+  }
 }

@@ -7,7 +7,10 @@
     "conditions": [
       {"type": "origins:origin", "origin": "klassen:schmied_lehrling"},
       {"type": "origins:origin", "origin": "klassen:schmied"},
-      {"type": "origins:origin", "origin": "klassen:himmelsschmied"}
+      {"type": "origins:origin", "origin": "klassen:himmelsschmied"},
+      {"type": "origins:origin", "origin": "klassen:krieger_lehrling", "layer": "klassen:class"},
+      {"type": "origins:origin", "origin": "klassen:krieger", "layer": "klassen:class"},
+      {"type": "origins:origin", "origin": "klassen:kampfmeister", "layer": "klassen:class"}
     ]
   },
   "name": {"translate": "power.klassen.lock_swords.name"},
