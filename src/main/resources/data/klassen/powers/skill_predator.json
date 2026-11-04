@@ -6,13 +6,30 @@
   },
   "cooldown": 300,
   "entity_action": {
-    "type": "apoli:area_of_effect",
-    "radius": 4,
-    "bientity_action": {
-      "type": "apoli:damage",
-      "amount": 8,
-      "damage_type": "minecraft:magic"
-    }
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:area_of_effect",
+        "radius": 4,
+        "bientity_action": {
+          "type": "apoli:damage",
+          "amount": 8,
+          "damage_type": "minecraft:magic"
+        }
+      },
+      {
+        "type": "apoli:spawn_particles",
+        "particle": "minecraft:smoke",
+        "count": 24,
+        "speed": 0.25,
+        "spread": [
+          0.6,
+          0.8,
+          0.6
+        ],
+        "offset_y": 1.0
+      }
+    ]
   },
   "name": {
     "translate": "power.klassen.skill_predator.name"

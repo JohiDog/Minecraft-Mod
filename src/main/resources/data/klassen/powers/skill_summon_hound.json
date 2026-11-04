@@ -6,11 +6,28 @@
   },
   "cooldown": 400,
   "entity_action": {
-    "type": "apoli:spawn_entity",
-    "entity_type": "minecraft:wolf",
-    "tag": {
-      "Tame": true
-    }
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:spawn_entity",
+        "entity_type": "minecraft:wolf",
+        "tag": {
+          "Tame": true
+        }
+      },
+      {
+        "type": "apoli:spawn_particles",
+        "particle": "minecraft:totem_of_undying",
+        "count": 24,
+        "speed": 0.25,
+        "spread": [
+          0.6,
+          0.8,
+          0.6
+        ],
+        "offset_y": 1.0
+      }
+    ]
   },
   "name": {
     "translate": "power.klassen.skill_summon_hound.name"

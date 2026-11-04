@@ -44,11 +44,11 @@ public final class KlassenHudOverlay {
         int y = screenHeight - 23;
 
         graphics.fill(x - 2, y - 2, x + 22, y + 22, 0x90000000);
-        graphics.renderOutline(x - 2, y - 2, 24, 24, 0xFF555555);
+        graphics.renderOutline(x - 2, y - 2, 24, 24, 0xFFFFAA00);
         graphics.renderItem(origin.getDisplayItem(), x + 2, y + 2);
 
         graphics.drawString(client.font, Component.translatable("hud.klassen.ability"), x + 26, y + 1, 0x55FFFF, false);
-        graphics.drawString(client.font, origin.getName(), x + 26, y + 10, 0xFFFFFF, false);
+        graphics.drawString(client.font, origin.getName(), x + 26, y + 10, 0xFFFFFF, true);
         graphics.drawString(client.font, Component.translatable("hud.klassen.ability_key"), x + 26, y + 19 - 8, 0xFFAA00, false);
     }
 }

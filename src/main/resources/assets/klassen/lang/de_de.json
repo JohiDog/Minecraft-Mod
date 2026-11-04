@@ -116,7 +116,7 @@
   "key.klassen.overview": "Klassen-Uebersicht oeffnen",
   "category.klassen": "Klassen Framework",
   "screen.klassen.overview.title": "Rassen, Klassen & Aufstiege",
-  "screen.klassen.overview.entry": "%s (Impact %s)",
+  "screen.klassen.overview.entry": "%s %s",
   "screen.klassen.overview.upgrade": "Aufstieg: %s (Advancement: %s)",
   "origin.klassen.krieger_lehrling.name": "Krieger-Lehrling",
   "origin.klassen.krieger_lehrling.description": "+2 Schaden. Kann Klingen benutzen.",

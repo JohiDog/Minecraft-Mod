@@ -1,8 +1,39 @@
 {
   "type": "apoli:active_self",
-  "key": {"key": "key.origins.primary_active", "continuous": false},
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  },
   "cooldown": 600,
-  "entity_action": {"type": "apoli:apply_effect", "effect": {"effect": "minecraft:saturation", "duration": 1, "amplifier": 2}},
-  "name": {"translate": "power.klassen.ability_koch.name"},
-  "description": {"translate": "power.klassen.ability_koch.description"}
+  "entity_action": {
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:apply_effect",
+        "effect": {
+          "effect": "minecraft:saturation",
+          "duration": 1,
+          "amplifier": 2
+        }
+      },
+      {
+        "type": "apoli:spawn_particles",
+        "particle": "minecraft:heart",
+        "count": 24,
+        "speed": 0.25,
+        "spread": [
+          0.6,
+          0.8,
+          0.6
+        ],
+        "offset_y": 1.0
+      }
+    ]
+  },
+  "name": {
+    "translate": "power.klassen.ability_koch.name"
+  },
+  "description": {
+    "translate": "power.klassen.ability_koch.description"
+  }
 }

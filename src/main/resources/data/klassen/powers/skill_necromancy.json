@@ -6,8 +6,25 @@
   },
   "cooldown": 600,
   "entity_action": {
-    "type": "apoli:spawn_entity",
-    "entity_type": "minecraft:zombie"
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:spawn_entity",
+        "entity_type": "minecraft:zombie"
+      },
+      {
+        "type": "apoli:spawn_particles",
+        "particle": "minecraft:soul",
+        "count": 24,
+        "speed": 0.25,
+        "spread": [
+          0.6,
+          0.8,
+          0.6
+        ],
+        "offset_y": 1.0
+      }
+    ]
   },
   "name": {
     "translate": "power.klassen.skill_necromancy.name"

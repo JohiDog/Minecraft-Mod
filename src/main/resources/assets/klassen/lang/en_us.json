@@ -35,7 +35,7 @@
   "key.klassen.overview": "Open class overview",
   "category.klassen": "Klassen Framework",
   "screen.klassen.overview.title": "Races, Classes & Ascensions",
-  "screen.klassen.overview.entry": "%s (impact %s)",
+  "screen.klassen.overview.entry": "%s %s",
   "screen.klassen.overview.upgrade": "Ascension: %s (advancement: %s)",
   "origin.klassen.krieger_lehrling.name": "Warrior Apprentice",
   "origin.klassen.krieger.name": "Warrior",

@@ -1,11 +1,46 @@
 {
   "type": "apoli:active_self",
-  "key": {"key": "key.origins.primary_active", "continuous": false},
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  },
   "cooldown": 400,
-  "entity_action": {"type": "apoli:apply_effect", "effects": [
-    {"effect": "minecraft:night_vision", "duration": 200, "amplifier": 0},
-    {"effect": "minecraft:glowing", "duration": 200, "amplifier": 0}
-  ]},
-  "name": {"translate": "power.klassen.ability_magier.name"},
-  "description": {"translate": "power.klassen.ability_magier.description"}
+  "entity_action": {
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:apply_effect",
+        "effects": [
+          {
+            "effect": "minecraft:night_vision",
+            "duration": 200,
+            "amplifier": 0
+          },
+          {
+            "effect": "minecraft:glowing",
+            "duration": 200,
+            "amplifier": 0
+          }
+        ]
+      },
+      {
+        "type": "apoli:spawn_particles",
+        "particle": "minecraft:enchant",
+        "count": 24,
+        "speed": 0.25,
+        "spread": [
+          0.6,
+          0.8,
+          0.6
+        ],
+        "offset_y": 1.0
+      }
+    ]
+  },
+  "name": {
+    "translate": "power.klassen.ability_magier.name"
+  },
+  "description": {
+    "translate": "power.klassen.ability_magier.description"
+  }
 }

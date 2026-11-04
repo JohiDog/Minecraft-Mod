@@ -1,8 +1,39 @@
 {
   "type": "apoli:active_self",
-  "key": {"key": "key.origins.primary_active", "continuous": false},
+  "key": {
+    "key": "key.origins.primary_active",
+    "continuous": false
+  },
   "cooldown": 600,
-  "entity_action": {"type": "apoli:apply_effect", "effect": {"effect": "minecraft:resistance", "duration": 200, "amplifier": 0}},
-  "name": {"translate": "power.klassen.ability_paladin.name"},
-  "description": {"translate": "power.klassen.ability_paladin.description"}
+  "entity_action": {
+    "type": "apoli:and",
+    "actions": [
+      {
+        "type": "apoli:apply_effect",
+        "effect": {
+          "effect": "minecraft:resistance",
+          "duration": 200,
+          "amplifier": 0
+        }
+      },
+      {
+        "type": "apoli:spawn_particles",
+        "particle": "minecraft:end_rod",
+        "count": 24,
+        "speed": 0.25,
+        "spread": [
+          0.6,
+          0.8,
+          0.6
+        ],
+        "offset_y": 1.0
+      }
+    ]
+  },
+  "name": {
+    "translate": "power.klassen.ability_paladin.name"
+  },
+  "description": {
+    "translate": "power.klassen.ability_paladin.description"
+  }
 }
