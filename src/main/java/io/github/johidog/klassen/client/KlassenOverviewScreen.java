@@ -1,24 +1,19 @@
 package io.github.johidog.klassen.client;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
 import io.github.apace100.origins.origin.Origin;
-import io.github.apace100.origins.origin.OriginLayer;
-import io.github.apace100.origins.origin.OriginLayers;
-import io.github.apace100.origins.origin.OriginRegistry;
 import io.github.johidog.klassen.mixin.ClientAdvancementsAccessor;
-import net.minecraft.advancements.AdvancementHolder;
+import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 
@@ -27,11 +22,12 @@ public class KlassenOverviewScreen extends Screen {
     private static final int PANEL_MARGIN = 24;
     private static final int ROW_HEIGHT = 20;
     private static final int HEADER_HEIGHT = 18;
+    private static final ResourceLocation RACE_LAYER = new ResourceLocation("klassen", "race");
 
-    private List<OriginLayer> layers;
+    private KlassenData.Model model;
     private int scroll;
     private int contentHeight;
-    private Origin hovered;
+    private KlassenData.OriginInfo hovered;
 
     protected KlassenOverviewScreen() {
         super(Component.translatable("screen.klassen.overview.title"));
@@ -39,14 +35,11 @@ public class KlassenOverviewScreen extends Screen {
 
     @Override
     protected void init() {
-        layers = OriginLayers.getLayers().stream()
-            .filter(OriginLayer::isEnabled)
-            .sorted(Comparator.comparingInt(OriginLayer::getOrder))
-            .toList();
+        model = KlassenData.load();
         contentHeight = 24;
-        for (OriginLayer layer : layers) {
-            if (layer.isHidden()) continue;
-            contentHeight += HEADER_HEIGHT + layer.getOrigins().size() * ROW_HEIGHT + 8;
+        for (KlassenData.LayerInfo layer : model.layers()) {
+            if (!layer.enabled() || layer.hidden()) continue;
+            contentHeight += HEADER_HEIGHT + layer.origins().size() * ROW_HEIGHT + 8;
         }
         scroll = 0;
         addRenderableWidget(Button.builder(Component.translatable("gui.done"), button -> onClose())
@@ -55,26 +48,24 @@ public class KlassenOverviewScreen extends Screen {
     }
 
     private int maxScroll() {
-        int view = height - 60;
-        return Math.max(0, contentHeight - view);
+        return Math.max(0, contentHeight - (height - 60));
     }
 
     @Override
-    public boolean mouseScrolled(double mouseX, double mouseY, double horizontalAmount, double verticalAmount) {
-        scroll = Math.max(0, Math.min(maxScroll(), scroll - (int) (verticalAmount * 24)));
+    public boolean mouseScrolled(double mouseX, double mouseY, double amount) {
+        scroll = Math.max(0, Math.min(maxScroll(), scroll - (int) (amount * 24)));
         return true;
     }
 
     @Override
     public void render(GuiGraphics graphics, int mouseX, int mouseY, float delta) {
-        renderBackground(graphics, mouseX, mouseY, delta);
+        renderBackground(graphics);
 
         int px = PANEL_MARGIN;
         int py = 34;
         int pw = width - PANEL_MARGIN * 2;
         int ph = height - 60;
 
-        // Panel + Titel
         graphics.fill(px, 8, px + pw, 30, 0xC0101018);
         graphics.renderOutline(px, 8, pw, 22, 0xFF8A2BE2);
         graphics.drawCenteredString(font, title, width / 2, 14, 0xE0C0FF);
@@ -82,32 +73,28 @@ public class KlassenOverviewScreen extends Screen {
         graphics.renderOutline(px, py, pw, ph, 0xFF444466);
 
         Minecraft client = Minecraft.getInstance();
-        Map<OriginLayer, Origin> current = client.player != null ? Origin.get(client.player) : Map.of();
+        Map<?, Origin> currentRaw = client.player != null ? Origin.get(client.player) : Map.of();
+        ResourceLocation currentRaceId = currentRaceId(currentRaw);
 
-        drawAscensionProgress(graphics, client, current, px, py, pw);
+        drawAscensionProgress(graphics, client, currentRaceId, px, py, pw);
 
         graphics.enableScissor(px + 2, py + 2, px + pw - 2, py + ph - 2);
         hovered = null;
         int y = py + 26 - scroll;
         int layerIndex = 0;
-        for (OriginLayer layer : layers) {
-            if (layer.isHidden()) continue;
+        for (KlassenData.LayerInfo layer : model.layers()) {
+            if (!layer.enabled() || layer.hidden()) continue;
             int headerColor = new int[]{0xFF55FFFF, 0xFFFFAA00, 0xFF55FF55, 0xFFFF6688, 0xFF66AAFF}[layerIndex % 5];
             graphics.fill(px + 4, y, px + pw - 4, y + HEADER_HEIGHT - 2, 0x60222233);
-            graphics.drawString(font, layer.getName(), px + 10, y + 5, headerColor, false);
+            graphics.drawString(font, Component.translatable(layer.nameKey()), px + 10, y + 5, headerColor, false);
             y += HEADER_HEIGHT;
-            for (ResourceLocation originId : layer.getOrigins()) {
-                Origin origin;
-                try {
-                    origin = OriginRegistry.get(originId);
-                } catch (IllegalArgumentException e) {
-                    continue;
-                }
+            for (ResourceLocation originId : layer.origins()) {
+                KlassenData.OriginInfo info = model.origin(originId);
+                if (info == null) continue;
                 int rowY = y;
-                Origin selected = current.get(layer);
-                boolean isSelected = selected != null && selected.equals(origin);
+                boolean isSelected = originId.equals(currentIdForLayer(currentRaw, layer.id()));
                 boolean hover = mouseX >= px + 4 && mouseX <= px + pw - 4 && mouseY >= rowY && mouseY < rowY + ROW_HEIGHT;
-                if (hover) hovered = origin;
+                if (hover) hovered = info;
 
                 if (hover) graphics.fill(px + 4, rowY, px + pw - 4, rowY + ROW_HEIGHT, 0x40FFFFFF);
                 if (isSelected) {
@@ -115,15 +102,19 @@ public class KlassenOverviewScreen extends Screen {
                     graphics.drawString(font, Component.literal("✔"), px + pw - 18, rowY + 6, 0x55FF55, false);
                 }
 
-                // Icon-Slot
                 graphics.fill(px + 10, rowY + 2, px + 28, rowY + 20, 0xFF0A0A12);
                 graphics.renderOutline(px + 10, rowY + 2, 18, 18, isSelected ? 0xFF55FF55 : 0xFF666688);
-                graphics.renderItem(origin.getDisplayItem(), px + 12, rowY + 4);
+                graphics.renderItem(new ItemStack(BuiltInRegistries.ITEM.get(new ResourceLocation(info.iconItem()))), px + 12, rowY + 4);
 
-                Component name = Component.translatable("screen.klassen.overview.entry", origin.getName(), impactPips(origin.getImpact().getImpactValue()));
+                Component name = Component.translatable("screen.klassen.overview.entry",
+                    Component.translatable(info.nameKey()), impactPips(info.impact()));
                 graphics.drawString(font, name, px + 34, rowY + 6, isSelected ? 0x77FF77 : 0xF0F0FF, true);
 
-                List<String> next = upgradeTargets(origin);
+                List<String> next = new ArrayList<>();
+                for (KlassenData.UpgradeInfo up : info.upgrades()) {
+                    KlassenData.OriginInfo target = model.origin(new ResourceLocation(up.targetOrigin()));
+                    next.add(target != null ? Component.translatable(target.nameKey()).getString() : up.targetOrigin());
+                }
                 if (!next.isEmpty()) {
                     int nx = px + 34 + font.width(name) + 10;
                     graphics.drawString(font, Component.literal("→ " + String.join(" / ", next)), nx, rowY + 6, 0xFFCC44, false);
@@ -135,7 +126,6 @@ public class KlassenOverviewScreen extends Screen {
         }
         graphics.disableScissor();
 
-        // Scrollbar
         if (maxScroll() > 0) {
             int trackX = px + pw - 6;
             graphics.fill(trackX, py + 2, trackX + 3, py + ph - 2, 0x40FFFFFF);
@@ -144,32 +134,41 @@ public class KlassenOverviewScreen extends Screen {
             graphics.fill(trackX, thumbY, trackX + 3, thumbY + thumbH, 0xFFAA66FF);
         }
 
-        // Tooltip (Description des Hover-Eintrags)
         if (hovered != null) {
             int tipY = py + ph - 22;
             graphics.fill(px + 4, tipY, px + pw - 4, tipY + 18, 0xE0000000);
             graphics.renderOutline(px + 4, tipY, pw - 8, 18, 0xFF8A2BE2);
-            graphics.drawString(font, hovered.getDescription(), px + 10, tipY + 5, 0xCCCCFF, false);
+            graphics.drawString(font, Component.translatable(hovered.descKey()), px + 10, tipY + 5, 0xCCCCFF, false);
         }
     }
 
-    private void drawAscensionProgress(GuiGraphics g, Minecraft client, Map<OriginLayer, Origin> current, int px, int py, int pw) {
-        OriginLayer raceLayer = OriginLayers.getNullableLayer(new ResourceLocation("klassen", "race"));
-        Origin race = raceLayer != null ? current.get(raceLayer) : null;
-        if (race == null || race == Origin.EMPTY) return;
+    private static ResourceLocation currentRaceId(Map<?, Origin> current) {
+        ResourceLocation id = currentIdForLayer(current, RACE_LAYER);
+        return id;
+    }
 
-        JsonObject json = race.toJson();
+    private static ResourceLocation currentIdForLayer(Map<?, Origin> current, ResourceLocation layerId) {
+        for (Map.Entry<?, Origin> entry : current.entrySet()) {
+            if (entry.getKey() instanceof io.github.apace100.origins.origin.OriginLayer layer
+                && layer.getIdentifier().equals(layerId) && entry.getValue() != null) {
+                return entry.getValue().getIdentifier();
+            }
+        }
+        return null;
+    }
+
+    private void drawAscensionProgress(GuiGraphics g, Minecraft client, ResourceLocation currentRaceId, int px, int py, int pw) {
+        if (currentRaceId == null) return;
+        KlassenData.OriginInfo race = model.origin(currentRaceId);
+        if (race == null) return;
+
         String advId = null;
         String targetName = null;
-        if (json.has("upgrades") && json.get("upgrades").isJsonArray() && !json.getAsJsonArray("upgrades").isEmpty()) {
-            JsonObject up = json.getAsJsonArray("upgrades").get(0).getAsJsonObject();
-            advId = up.get("condition").getAsString();
-            ResourceLocation targetId = new ResourceLocation(up.get("origin").getAsString());
-            try {
-                targetName = OriginRegistry.get(targetId).getName().getString();
-            } catch (IllegalArgumentException e) {
-                targetName = targetId.toString();
-            }
+        if (!race.upgrades().isEmpty()) {
+            KlassenData.UpgradeInfo up = race.upgrades().get(0);
+            advId = up.advancement();
+            KlassenData.OriginInfo target = model.origin(new ResourceLocation(up.targetOrigin()));
+            targetName = target != null ? Component.translatable(target.nameKey()).getString() : up.targetOrigin();
         }
 
         float pct;
@@ -194,9 +193,9 @@ public class KlassenOverviewScreen extends Screen {
         try {
             if (client.getConnection() == null) return 0f;
             var advancements = client.getConnection().getAdvancements();
-            AdvancementHolder holder = advancements.get(new ResourceLocation(advId));
-            if (holder == null) return 0f;
-            AdvancementProgress prog = ((ClientAdvancementsAccessor) advancements).klassen$getProgressMap().get(holder);
+            Advancement adv = advancements.getAdvancements().get(new ResourceLocation(advId));
+            if (adv == null) return 0f;
+            AdvancementProgress prog = ((ClientAdvancementsAccessor) advancements).klassen$getProgressMap().get(adv);
             if (prog == null) return 0f;
             return prog.isDone() ? 1f : prog.getPercent();
         } catch (Throwable t) {
@@ -206,24 +205,6 @@ public class KlassenOverviewScreen extends Screen {
 
     private static String impactPips(int impact) {
         return "●".repeat(Math.max(0, impact)) + "○".repeat(Math.max(0, 3 - impact));
-    }
-
-    private static List<String> upgradeTargets(Origin origin) {
-        List<String> out = new ArrayList<>();
-        JsonObject json = origin.toJson();
-        if (json.has("upgrades") && json.get("upgrades").isJsonArray()) {
-            JsonArray upgrades = json.getAsJsonArray("upgrades");
-            for (JsonElement el : upgrades) {
-                JsonObject up = el.getAsJsonObject();
-                ResourceLocation targetId = new ResourceLocation(up.get("origin").getAsString());
-                try {
-                    out.add(OriginRegistry.get(targetId).getName().getString());
-                } catch (IllegalArgumentException e) {
-                    out.add(targetId.toString());
-                }
-            }
-        }
-        return out;
     }
 
     @Override

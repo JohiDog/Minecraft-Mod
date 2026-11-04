@@ -20,9 +20,9 @@
   "depends": {
     "java": ">=17",
     "fabricloader": ">=0.15.10",
-    "minecraft": "1.20.2",
-    "fabric-api": ">=0.91.6+1.20.2",
-    "origins": ">=1.12.10",
+    "minecraft": "1.20.1",
+    "fabric-api": ">=0.92.12+1.20.1",
+    "origins": ">=1.10.1",
     "apoli": ">=2.11.11"
   },
   "suggests": {

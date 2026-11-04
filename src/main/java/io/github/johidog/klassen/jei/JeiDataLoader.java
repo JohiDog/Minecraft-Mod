@@ -29,11 +29,16 @@ public final class JeiDataLoader {
     private JeiDataLoader() {
     }
 
-    public static List<JsonObject> loadJsonObjects(String dir) {
+    public static List<String> listPublic(String dir) {
         List<String> paths = listClasspathEntries(dir);
         if (paths.isEmpty()) {
             paths = readIndex(dir);
         }
+        return paths;
+    }
+
+    public static List<JsonObject> loadJsonObjects(String dir) {
+        List<String> paths = listPublic(dir);
         List<JsonObject> out = new ArrayList<>();
         for (String path : paths) {
             if (!path.endsWith(".json")) continue;

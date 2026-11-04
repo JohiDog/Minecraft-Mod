@@ -1,6 +1,6 @@
 package io.github.johidog.klassen.mixin;
 
-import net.minecraft.advancements.AdvancementHolder;
+import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.client.multiplayer.ClientAdvancements;
 import org.spongepowered.asm.mixin.Mixin;
@@ -12,5 +12,5 @@ import java.util.Map;
 public interface ClientAdvancementsAccessor {
 
     @Accessor("progress")
-    Map<AdvancementHolder, AdvancementProgress> klassen$getProgressMap();
+    Map<Advancement, AdvancementProgress> klassen$getProgressMap();
 }

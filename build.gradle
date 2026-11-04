@@ -32,7 +32,7 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     modCompileOnly "maven.modrinth:origins:${project.origins_version}"
-    modCompileOnly "com.github.apace100:calio:v1.13.3"
+    modCompileOnly "com.github.apace100:calio:v1.11.1"
     modCompileOnly "dev.onyxstudios.cardinal-components-api:cardinal-components-base:5.3.0"
     modCompileOnly "dev.onyxstudios.cardinal-components-api:cardinal-components-entity:5.3.0"
 
