@@ -1,3 +1,8 @@
 {
-  "values": ["waffen:magiebuch", "waffen:magie_stab", "waffen:gott_stab", "waffen:gott_zauberbuch"]
+  "values": [
+    "waffen:magiebuch",
+    "waffen:magie_stab",
+    "waffen:gott_stab",
+    "waffen:gott_zauberbuch"
+  ]
 }

@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "io.github.johidog.klassen.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "ClientAdvancementsAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

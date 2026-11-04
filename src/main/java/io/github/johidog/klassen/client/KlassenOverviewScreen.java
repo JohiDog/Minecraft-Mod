@@ -7,6 +7,9 @@ import io.github.apace100.origins.origin.Origin;
 import io.github.apace100.origins.origin.OriginLayer;
 import io.github.apace100.origins.origin.OriginLayers;
 import io.github.apace100.origins.origin.OriginRegistry;
+import io.github.johidog.klassen.mixin.ClientAdvancementsAccessor;
+import net.minecraft.advancements.AdvancementHolder;
+import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
@@ -40,7 +43,7 @@ public class KlassenOverviewScreen extends Screen {
             .filter(OriginLayer::isEnabled)
             .sorted(Comparator.comparingInt(OriginLayer::getOrder))
             .toList();
-        contentHeight = 0;
+        contentHeight = 24;
         for (OriginLayer layer : layers) {
             if (layer.isHidden()) continue;
             contentHeight += HEADER_HEIGHT + layer.getOrigins().size() * ROW_HEIGHT + 8;
@@ -81,9 +84,11 @@ public class KlassenOverviewScreen extends Screen {
         Minecraft client = Minecraft.getInstance();
         Map<OriginLayer, Origin> current = client.player != null ? Origin.get(client.player) : Map.of();
 
+        drawAscensionProgress(graphics, client, current, px, py, pw);
+
         graphics.enableScissor(px + 2, py + 2, px + pw - 2, py + ph - 2);
         hovered = null;
-        int y = py + 6 - scroll;
+        int y = py + 26 - scroll;
         int layerIndex = 0;
         for (OriginLayer layer : layers) {
             if (layer.isHidden()) continue;
@@ -145,6 +150,57 @@ public class KlassenOverviewScreen extends Screen {
             graphics.fill(px + 4, tipY, px + pw - 4, tipY + 18, 0xE0000000);
             graphics.renderOutline(px + 4, tipY, pw - 8, 18, 0xFF8A2BE2);
             graphics.drawString(font, hovered.getDescription(), px + 10, tipY + 5, 0xCCCCFF, false);
+        }
+    }
+
+    private void drawAscensionProgress(GuiGraphics g, Minecraft client, Map<OriginLayer, Origin> current, int px, int py, int pw) {
+        OriginLayer raceLayer = OriginLayers.getNullableLayer(new ResourceLocation("klassen", "race"));
+        Origin race = raceLayer != null ? current.get(raceLayer) : null;
+        if (race == null || race == Origin.EMPTY) return;
+
+        JsonObject json = race.toJson();
+        String advId = null;
+        String targetName = null;
+        if (json.has("upgrades") && json.get("upgrades").isJsonArray() && !json.getAsJsonArray("upgrades").isEmpty()) {
+            JsonObject up = json.getAsJsonArray("upgrades").get(0).getAsJsonObject();
+            advId = up.get("condition").getAsString();
+            ResourceLocation targetId = new ResourceLocation(up.get("origin").getAsString());
+            try {
+                targetName = OriginRegistry.get(targetId).getName().getString();
+            } catch (IllegalArgumentException e) {
+                targetName = targetId.toString();
+            }
+        }
+
+        float pct;
+        Component label;
+        if (advId == null) {
+            pct = 1.0f;
+            label = Component.translatable("screen.klassen.progress.max");
+        } else {
+            pct = readAdvancementPercent(client, advId);
+            label = Component.translatable("screen.klassen.progress", targetName, Math.round(pct * 100) + "%");
+        }
+
+        int x = px + 4, y = py + 4, w = pw - 8, h = 16;
+        g.fill(x, y, x + w, y + h, 0xFF101018);
+        g.renderOutline(x, y, w, h, 0xFF8A2BE2);
+        int fw = (int) ((w - 2) * Math.max(0f, Math.min(1f, pct)));
+        if (fw > 0) g.fill(x + 1, y + 1, x + 1 + fw, y + h - 1, pct >= 1f ? 0xFF44DD66 : 0xFF44AAFF);
+        g.drawCenteredString(font, label, x + w / 2, y + 4, 0xFFFFFF);
+    }
+
+    private static float readAdvancementPercent(Minecraft client, String advId) {
+        try {
+            if (client.getConnection() == null) return 0f;
+            var advancements = client.getConnection().getAdvancements();
+            AdvancementHolder holder = advancements.get(new ResourceLocation(advId));
+            if (holder == null) return 0f;
+            AdvancementProgress prog = ((ClientAdvancementsAccessor) advancements).klassen$getProgressMap().get(holder);
+            if (prog == null) return 0f;
+            return prog.isDone() ? 1f : prog.getPercent();
+        } catch (Throwable t) {
+            return 0f;
         }
     }
 

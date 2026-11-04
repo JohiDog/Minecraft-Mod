@@ -14,7 +14,7 @@ Rezepte sind hinter Klasse/Tier gelockt).
 
 1. Voraussetzung: Minecraft **1.20.2** mit Fabric Loader >= 0.15.10, dazu die Mods
    **Origins 1.12.10** (liefert Apoli/Calio gleich mit) und **Fabric API 0.91.6+1.20.2**.
-2. Jar ist fertig in `dist/klassen-framework-1.5.0+1.20.2.jar` – in den `mods/`-Ordner legen. Neu bauen (JDK 17 noetig): `./tools/build-jar.sh` (= `./gradlew build`).
+2. Jar ist fertig in `dist/klassen-framework-1.6.0+1.20.2.jar` – in den `mods/`-Ordner legen. Neu bauen (JDK 17 noetig): `./tools/build-jar.sh` (= `./gradlew build`).
 3. Neue Welt erstellen -> Auswahl-Reihenfolge: **Rasse -> Klasse -> Skill 1 -> Skill 2 -> Skill 3**
    (die vanilla `origins:origin`-Schicht ist abgeschaltet, siehe `data/origins/origin_layers/origin.json`;
    zum Re-Aktivieren Datei loeschen oder `"enabled": true` setzen).
@@ -74,6 +74,12 @@ src/main/resources/
 - Eigenen Code (z.B. Power fuer Item-Durability): `build.gradle` auf fabric-loom umstellen,
   siehe `examples/CustomPowerExample.java`.
 - Fertiges Jar bauen: `./tools/build-jar.sh` -> `./gradlew build` (Fabric Loom, JDK 17) -> Jar in `dist/`.
+
+## Empfohlene Zusatzmods (optional)
+- **Simply Swords** (Waffenvielfalt: Dolch/Katana/Großschwert – ist bereits in den Waffen-Tags `schwerter`/`boegen` vorgetragen, greift automatisch wenn installiert)
+- **Better Combat** oder **Epic Fight** (bessere Kampf-Animationen)
+- **Cloth Config + Architectury** (Config-/UI-Libs)
+- **JEI** (Requirements-Tabs), **Farmer's Delight** (Koch-Lock)
 
 ## Doku
 

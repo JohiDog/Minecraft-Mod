@@ -374,5 +374,7 @@
   "jei.klassen.req.tensura_intrinsic": "Intrinsic: Prädator, Gefräßigkeit, Gr. Weiser, Wasseratmung, Regeneration, Drachenhaut, Gefahrensinn, Scharfschütze",
   "jei.klassen.req.tensura_aspectual": "Aspectual Magic: Feuerball, Wasserschneider, Erdspitzen, Windklinge, Blitzlanze",
   "jei.klassen.req.tensura_spiritual": "Spiritual: Geistblick, Seelenrüstung, Nekromantie",
-  "jei.klassen.req.tensura_summoning": "Summoning: Hund, Elementar, Gr. Elementar"
+  "jei.klassen.req.tensura_summoning": "Summoning: Hund, Elementar, Gr. Elementar",
+  "screen.klassen.progress": "Aufstieg zu %s: %s",
+  "screen.klassen.progress.max": "Maximale Stufe erreicht"
 }

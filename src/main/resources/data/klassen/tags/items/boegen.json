@@ -1,3 +1,9 @@
 {
-  "values": ["waffen:bogen", "waffen:langbogen", "waffen:armbrust"]
+  "values": [
+    "waffen:bogen",
+    "waffen:langbogen",
+    "waffen:armbrust",
+    "simplyswords:iron_glaive",
+    "simplyswords:longbow"
+  ]
 }

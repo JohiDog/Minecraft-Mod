@@ -1,3 +1,18 @@
 {
-  "values": ["waffen:dolch", "waffen:schwert", "waffen:grossschwert", "waffen:gottesklinge", "waffen:grossschwert_der_goetter"]
+  "values": [
+    "waffen:dolch",
+    "waffen:schwert",
+    "waffen:grossschwert",
+    "waffen:gottesklinge",
+    "waffen:grossschwert_der_goetter",
+    "simplyswords:iron_dagger",
+    "simplyswords:iron_katana",
+    "simplyswords:iron_broadsword",
+    "simplyswords:diamond_dagger",
+    "simplyswords:diamond_katana",
+    "simplyswords:diamond_broadsword",
+    "simplyswords:netherite_dagger",
+    "simplyswords:netherite_katana",
+    "simplyswords:netherite_broadsword"
+  ]
 }

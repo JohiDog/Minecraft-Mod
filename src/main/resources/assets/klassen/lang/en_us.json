@@ -374,5 +374,7 @@
   "jei.klassen.req.tensura_intrinsic": "Intrinsic: Predator, Gluttony, Great Sage, Water Breathing, Infinite Regeneration, Dragon Skin, Danger Sense, Sniper",
   "jei.klassen.req.tensura_aspectual": "Aspectual Magic: Fire Ball, Water Cutter, Earth Spikes, Wind Blade, Lightning Lance",
   "jei.klassen.req.tensura_spiritual": "Spiritual: Spirit Sight, Soul Armor, Necromancy",
-  "jei.klassen.req.tensura_summoning": "Summoning: Hound, Elemental, Greater Elemental"
+  "jei.klassen.req.tensura_summoning": "Summoning: Hound, Elemental, Greater Elemental",
+  "screen.klassen.progress": "Ascension to %s: %s",
+  "screen.klassen.progress.max": "Max tier reached"
 }

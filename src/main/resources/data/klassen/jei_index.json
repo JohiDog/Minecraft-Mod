@@ -1,0 +1,8 @@
+{
+  "files": [
+    "data/klassen/jei_classes/klassen.json",
+    "data/klassen/jei_requirements/diamond_sword.json",
+    "data/klassen/jei_requirements/golden_apple.json",
+    "data/klassen/jei_requirements/netherite_sword.json"
+  ]
+}
