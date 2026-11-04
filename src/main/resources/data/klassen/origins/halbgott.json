@@ -1,0 +1,11 @@
+{
+  "powers": ["origins:water_breathing", "origins:water_vision", "origins:fire_immunity", "origins:fall_immunity"],
+  "icon": {"item": "minecraft:nether_star"},
+  "unchoosable": true,
+  "impact": 2,
+  "name": {"translate": "origin.klassen.halbgott.name"},
+  "description": {"translate": "origin.klassen.halbgott.description"},
+  "upgrades": [
+    {"condition": "klassen:evolution/gott", "origin": "klassen:gott", "announcement": "announcement.klassen.gott"}
+  ]
+}

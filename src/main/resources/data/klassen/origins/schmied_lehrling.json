@@ -1,0 +1,11 @@
+{
+  "powers": ["klassen:schmied_lehrling_break"],
+  "icon": {"item": "minecraft:iron_pickaxe"},
+  "impact": 1,
+  "order": 2,
+  "name": {"translate": "origin.klassen.schmied_lehrling.name"},
+  "description": {"translate": "origin.klassen.schmied_lehrling.description"},
+  "upgrades": [
+    {"condition": "klassen:evolution/schmied", "origin": "klassen:schmied", "announcement": "announcement.klassen.schmied"}
+  ]
+}

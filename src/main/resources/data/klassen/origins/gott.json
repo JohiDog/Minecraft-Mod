@@ -1,0 +1,8 @@
+{
+  "powers": ["origins:water_breathing", "origins:water_vision", "origins:fire_immunity", "origins:fall_immunity", "origins:elytra", "origins:strong_arms", "origins:natural_armor"],
+  "icon": {"item": "minecraft:beacon"},
+  "unchoosable": true,
+  "impact": 3,
+  "name": {"translate": "origin.klassen.gott.name"},
+  "description": {"translate": "origin.klassen.gott.description"}
+}

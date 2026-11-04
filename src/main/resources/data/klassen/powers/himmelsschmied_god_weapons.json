@@ -1,0 +1,5 @@
+{
+  "type": "apoli:multiple",
+  "recipe_1": {"type": "apoli:recipe", "recipe": "waffen:gottesklinge"},
+  "recipe_2": {"type": "apoli:recipe", "recipe": "waffen:grossschwert_der_goetter"}
+}

@@ -1,0 +1,15 @@
+{
+  "type": "apoli:prevent_item_use",
+  "item_condition": {"type": "apoli:item", "item": "#klassen:boegen"},
+  "condition": {
+    "type": "apoli:or",
+    "inverted": true,
+    "conditions": [
+      {"type": "origins:origin", "origin": "klassen:bogenschuetze_anfaenger", "layer": "klassen:class"},
+      {"type": "origins:origin", "origin": "klassen:schuetze", "layer": "klassen:class"},
+      {"type": "origins:origin", "origin": "klassen:meisterschuetze", "layer": "klassen:class"}
+    ]
+  },
+  "name": {"translate": "power.klassen.lock_bows.name"},
+  "description": {"translate": "power.klassen.lock_bows.description"}
+}

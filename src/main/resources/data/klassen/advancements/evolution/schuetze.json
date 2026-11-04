@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {"item": "minecraft:bow"},
+    "title": {"translate": "advancements.klassen.evolution.schuetze.title"},
+    "description": {"translate": "advancements.klassen.evolution.schuetze.description"},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "req": {"trigger": "minecraft:adventure/sniper_duel"}
+  },
+  "requirements": [["req"]]
+}

@@ -1,0 +1,7 @@
+{
+  "type": "apoli:modify_food",
+  "saturation_modifiers": [{"operation": "addition", "value": 4.0}],
+  "always_edible": true,
+  "name": {"translate": "power.klassen.koch_food_bonus.name"},
+  "description": {"translate": "power.klassen.koch_food_bonus.description"}
+}

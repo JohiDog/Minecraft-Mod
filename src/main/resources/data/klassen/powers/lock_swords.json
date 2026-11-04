@@ -1,0 +1,15 @@
+{
+  "type": "apoli:prevent_item_use",
+  "item_condition": {"type": "apoli:item", "item": "#klassen:schwerter"},
+  "condition": {
+    "type": "apoli:or",
+    "inverted": true,
+    "conditions": [
+      {"type": "origins:origin", "origin": "klassen:schmied_lehrling"},
+      {"type": "origins:origin", "origin": "klassen:schmied"},
+      {"type": "origins:origin", "origin": "klassen:himmelsschmied"}
+    ]
+  },
+  "name": {"translate": "power.klassen.lock_swords.name"},
+  "description": {"translate": "power.klassen.lock_swords.description"}
+}

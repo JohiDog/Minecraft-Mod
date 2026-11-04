@@ -1,0 +1,23 @@
+{
+  "order": 3,
+  "enabled": true,
+  "origins": [
+    {
+      "condition": {"type": "apoli:or", "inverted": true, "conditions": [
+        {"type": "origins:origin", "origin": "klassen:koch", "layer": "klassen:skill_1"},
+        {"type": "origins:origin", "origin": "klassen:schmied_lehrling", "layer": "klassen:skill_1"}
+      ]},
+      "origins": ["klassen:koch", "klassen:schmied_lehrling"]
+    },
+    {
+      "condition": {"type": "origins:origin", "origin": "klassen:koch", "layer": "klassen:skill_1"},
+      "origins": ["klassen:schmied_lehrling"]
+    },
+    {
+      "condition": {"type": "origins:origin", "origin": "klassen:schmied_lehrling", "layer": "klassen:skill_1"},
+      "origins": ["klassen:koch"]
+    }
+  ],
+  "allow_random": true,
+  "name": {"translate": "layer.klassen.skill_2.name"}
+}

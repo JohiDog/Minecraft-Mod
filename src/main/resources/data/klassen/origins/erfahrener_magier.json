@@ -1,0 +1,11 @@
+{
+  "powers": ["klassen:erfahrener_magier_recipes"],
+  "icon": {"item": "minecraft:enchanted_book"},
+  "unchoosable": true,
+  "impact": 2,
+  "name": {"translate": "origin.klassen.erfahrener_magier.name"},
+  "description": {"translate": "origin.klassen.erfahrener_magier.description"},
+  "upgrades": [
+    {"condition": "klassen:evolution/erzmagier", "origin": "klassen:erzmagier", "announcement": "announcement.klassen.erzmagier"}
+  ]
+}

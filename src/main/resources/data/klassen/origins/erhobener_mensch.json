@@ -1,0 +1,11 @@
+{
+  "powers": ["origins:water_breathing", "origins:water_vision"],
+  "icon": {"item": "minecraft:diamond"},
+  "unchoosable": true,
+  "impact": 1,
+  "name": {"translate": "origin.klassen.erhobener_mensch.name"},
+  "description": {"translate": "origin.klassen.erhobener_mensch.description"},
+  "upgrades": [
+    {"condition": "klassen:evolution/halbgott", "origin": "klassen:halbgott", "announcement": "announcement.klassen.halbgott"}
+  ]
+}

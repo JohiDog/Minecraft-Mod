@@ -1,0 +1,8 @@
+{
+  "powers": ["origins:strong_arms", "origins:natural_armor", "origins:scare_creepers", "origins:fire_immunity", "origins:more_kinetic_damage"],
+  "icon": {"item": "minecraft:netherite_axe"},
+  "unchoosable": true,
+  "impact": 3,
+  "name": {"translate": "origin.klassen.goblin_god.name"},
+  "description": {"translate": "origin.klassen.goblin_god.description"}
+}

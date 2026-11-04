@@ -1,0 +1,15 @@
+{
+  "type": "apoli:prevent_item_use",
+  "item_condition": {"type": "apoli:item", "item": "#klassen:magie_waffen"},
+  "condition": {
+    "type": "apoli:or",
+    "inverted": true,
+    "conditions": [
+      {"type": "origins:origin", "origin": "klassen:magier_lehrling", "layer": "klassen:class"},
+      {"type": "origins:origin", "origin": "klassen:erfahrener_magier", "layer": "klassen:class"},
+      {"type": "origins:origin", "origin": "klassen:erzmagier", "layer": "klassen:class"}
+    ]
+  },
+  "name": {"translate": "power.klassen.lock_magic_weapons.name"},
+  "description": {"translate": "power.klassen.lock_magic_weapons.description"}
+}

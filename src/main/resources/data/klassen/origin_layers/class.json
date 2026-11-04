@@ -1,0 +1,14 @@
+{
+  "order": 1,
+  "enabled": true,
+  "origins": [
+    "klassen:magier_lehrling",
+    "klassen:bogenschuetze_anfaenger",
+    {
+      "condition": {"type": "origins:origin", "origin": "klassen:mensch", "layer": "klassen:race"},
+      "origins": ["klassen:paladin"]
+    }
+  ],
+  "allow_random": true,
+  "name": {"translate": "layer.klassen.class.name"}
+}

@@ -1,0 +1,8 @@
+{
+  "powers": ["klassen:erfahrener_magier_recipes", "klassen:erzmagier_god_spells"],
+  "icon": {"item": "minecraft:nether_star"},
+  "unchoosable": true,
+  "impact": 3,
+  "name": {"translate": "origin.klassen.erzmagier.name"},
+  "description": {"translate": "origin.klassen.erzmagier.description"}
+}

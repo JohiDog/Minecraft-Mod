@@ -1,0 +1,11 @@
+{
+  "powers": [],
+  "icon": {"item": "minecraft:apple"},
+  "impact": 0,
+  "order": 2,
+  "name": {"translate": "origin.klassen.mensch.name"},
+  "description": {"translate": "origin.klassen.mensch.description"},
+  "upgrades": [
+    {"condition": "klassen:evolution/erhobener_mensch", "origin": "klassen:erhobener_mensch", "announcement": "announcement.klassen.erhobener_mensch"}
+  ]
+}
