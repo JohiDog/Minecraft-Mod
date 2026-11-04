@@ -1,0 +1,11 @@
+{
+  "powers": ["origins:strong_arms", "origins:natural_armor", "origins:scare_creepers"],
+  "icon": {"item": "minecraft:golden_axe"},
+  "unchoosable": true,
+  "impact": 3,
+  "name": {"translate": "origin.klassen.goblin_hob.name"},
+  "description": {"translate": "origin.klassen.goblin_hob.description"},
+  "upgrades": [
+    {"condition": "klassen:evolution/goblin_god", "origin": "klassen:goblin_god", "announcement": "announcement.klassen.goblin_god"}
+  ]
+}

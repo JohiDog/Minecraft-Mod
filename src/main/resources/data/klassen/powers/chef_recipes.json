@@ -1,0 +1,6 @@
+{
+  "type": "apoli:multiple",
+  "recipe_1": {"type": "apoli:recipe", "recipe": "farmersdelight:cooked_rice"},
+  "recipe_2": {"type": "apoli:recipe", "recipe": "farmersdelight:chicken_soup"},
+  "recipe_3": {"type": "apoli:recipe", "recipe": "farmersdelight:pasta_with_meatballs"}
+}

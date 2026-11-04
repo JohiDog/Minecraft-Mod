@@ -1,0 +1,11 @@
+{
+  "powers": ["origins:strong_arms", "origins:natural_armor"],
+  "icon": {"item": "minecraft:iron_axe"},
+  "unchoosable": true,
+  "impact": 2,
+  "name": {"translate": "origin.klassen.goblin_brute.name"},
+  "description": {"translate": "origin.klassen.goblin_brute.description"},
+  "upgrades": [
+    {"condition": "klassen:evolution/goblin_hob", "origin": "klassen:goblin_hob", "announcement": "announcement.klassen.goblin_hob"}
+  ]
+}

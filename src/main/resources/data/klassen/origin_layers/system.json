@@ -1,0 +1,8 @@
+{
+  "order": 99,
+  "enabled": true,
+  "hidden": true,
+  "origins": ["klassen:base"],
+  "default_origin": "klassen:base",
+  "name": {"translate": "layer.klassen.system.name"}
+}

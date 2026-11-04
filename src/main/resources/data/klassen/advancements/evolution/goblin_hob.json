@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:adventure/root",
+  "display": {
+    "icon": {"item": "minecraft:gold_ingot"},
+    "title": {"translate": "advancements.klassen.evolution.goblin_hob.title"},
+    "description": {"translate": "advancements.klassen.evolution.goblin_hob.description"},
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "req": {"trigger": "minecraft:adventure/trade"}
+  },
+  "requirements": [["req"]]
+}

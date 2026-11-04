@@ -1,0 +1,8 @@
+{
+  "powers": ["klassen:schuetze_damage", "klassen:meisterschuetze_damage"],
+  "icon": {"item": "minecraft:arrow"},
+  "unchoosable": true,
+  "impact": 3,
+  "name": {"translate": "origin.klassen.meisterschuetze.name"},
+  "description": {"translate": "origin.klassen.meisterschuetze.description"}
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "klassen",
+  "version": "1.0.0",
+  "name": "Klassen Framework",
+  "description": "Rassen-, Klassen- und Skill-System mit Progression-Locks, basierend auf Origins/Apoli. 100% datengetrieben - Jar in den mods-Ordner legen und testen.",
+  "authors": ["du"],
+  "license": "MIT",
+  "environment": "*",
+  "depends": {
+    "java": ">=17",
+    "fabricloader": ">=0.15.10",
+    "minecraft": "1.20.2",
+    "fabric-api": ">=0.91.6+1.20.2",
+    "origins": ">=1.12.10",
+    "apoli": ">=2.11.11"
+  }
+}

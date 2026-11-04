@@ -1,0 +1,6 @@
+{
+  "type": "apoli:multiple",
+  "recipe_1": {"type": "apoli:recipe", "recipe": "farmersdelight:stuffed_potato"},
+  "recipe_2": {"type": "apoli:recipe", "recipe": "farmersdelight:cooked_cod_slice"},
+  "recipe_3": {"type": "apoli:recipe", "recipe": "farmersdelight:gourmet_beef_stew"}
+}

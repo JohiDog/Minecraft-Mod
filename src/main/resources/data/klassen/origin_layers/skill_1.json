@@ -1,0 +1,7 @@
+{
+  "order": 2,
+  "enabled": true,
+  "origins": ["klassen:koch", "klassen:schmied_lehrling"],
+  "allow_random": true,
+  "name": {"translate": "layer.klassen.skill_1.name"}
+}

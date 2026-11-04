@@ -1,0 +1,11 @@
+{
+  "powers": [],
+  "icon": {"item": "minecraft:bow"},
+  "impact": 1,
+  "order": 2,
+  "name": {"translate": "origin.klassen.bogenschuetze_anfaenger.name"},
+  "description": {"translate": "origin.klassen.bogenschuetze_anfaenger.description"},
+  "upgrades": [
+    {"condition": "klassen:evolution/schuetze", "origin": "klassen:schuetze", "announcement": "announcement.klassen.schuetze"}
+  ]
+}

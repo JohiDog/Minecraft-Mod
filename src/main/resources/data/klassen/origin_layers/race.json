@@ -1,0 +1,7 @@
+{
+  "order": 0,
+  "enabled": true,
+  "origins": ["klassen:goblin", "klassen:mensch"],
+  "allow_random": true,
+  "name": {"translate": "layer.klassen.race.name"}
+}

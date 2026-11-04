@@ -1,0 +1,15 @@
+{
+  "type": "apoli:prevent_item_use",
+  "item_condition": {"type": "apoli:item", "item": "#klassen:farmers_delight"},
+  "condition": {
+    "type": "apoli:or",
+    "inverted": true,
+    "conditions": [
+      {"type": "origins:origin", "origin": "klassen:koch"},
+      {"type": "origins:origin", "origin": "klassen:chef"},
+      {"type": "origins:origin", "origin": "klassen:sanji"}
+    ]
+  },
+  "name": {"translate": "power.klassen.lock_farmers_delight.name"},
+  "description": {"translate": "power.klassen.lock_farmers_delight.description"}
+}

@@ -1,0 +1,11 @@
+{
+  "powers": ["klassen:koch_food_bonus", "klassen:chef_recipes"],
+  "icon": {"item": "minecraft:cake"},
+  "unchoosable": true,
+  "impact": 2,
+  "name": {"translate": "origin.klassen.chef.name"},
+  "description": {"translate": "origin.klassen.chef.description"},
+  "upgrades": [
+    {"condition": "klassen:evolution/sanji", "origin": "klassen:sanji", "announcement": "announcement.klassen.sanji"}
+  ]
+}

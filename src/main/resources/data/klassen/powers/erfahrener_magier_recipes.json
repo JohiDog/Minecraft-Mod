@@ -1,0 +1,5 @@
+{
+  "type": "apoli:multiple",
+  "recipe_1": {"type": "apoli:recipe", "recipe": "waffen:zauberbuch_stufe1"},
+  "recipe_2": {"type": "apoli:recipe", "recipe": "waffen:magie_stab"}
+}
