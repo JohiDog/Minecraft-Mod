@@ -382,5 +382,11 @@
   "tooltip.klassen.req.schwerter": "Nur Schmiede oder Krieger",
   "tooltip.klassen.req.magie_waffen": "Nur Magier (Lehrling → Erzmagier)",
   "tooltip.klassen.req.farmers_delight": "Nur Köche (Koch → Chef → Sanji)",
-  "tooltip.klassen.req.diamond_sword": "Rasse: mindestens Erhobener Mensch"
+  "tooltip.klassen.req.diamond_sword": "Rasse: mindestens Erhobener Mensch",
+  "tooltip.klassen.subtitle.bow": "RANGED WEAPON · BOGEN",
+  "tooltip.klassen.effect.header": "✦ BOGEN-EFFEKT",
+  "tooltip.klassen.effect.bow1": "Halten: schwebende Partikel an der Bogenhand",
+  "tooltip.klassen.effect.bow2": "Laden: Partikel-Ring skaliert mit Ladung, Blitz bei voller Ladung",
+  "tooltip.klassen.effect.bow3": "Pfeil: Kometen-Trail + Explosions-Impact + Bonus-Schaden (2× Stufe)",
+  "tooltip.klassen.effect.bow.cd": "Effekt aktiv solange Bogenschützen-Klasse gewählt"
 }

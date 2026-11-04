@@ -382,5 +382,11 @@
   "tooltip.klassen.req.schwerter": "Smiths or Warriors only",
   "tooltip.klassen.req.magie_waffen": "Mages only (Apprentice → Archmage)",
   "tooltip.klassen.req.farmers_delight": "Cooks only (Cook → Chef → Sanji)",
-  "tooltip.klassen.req.diamond_sword": "Race: at least Ascended Human"
+  "tooltip.klassen.req.diamond_sword": "Race: at least Ascended Human",
+  "tooltip.klassen.subtitle.bow": "RANGED WEAPON · BOW",
+  "tooltip.klassen.effect.header": "✦ BOW EFFECT",
+  "tooltip.klassen.effect.bow1": "Held: floating particles at the bow hand",
+  "tooltip.klassen.effect.bow2": "Charging: particle ring scales with charge, flash at full charge",
+  "tooltip.klassen.effect.bow3": "Arrow: comet trail + explosion impact + bonus damage (2× tier)",
+  "tooltip.klassen.effect.bow.cd": "Active while an archer class is selected"
 }

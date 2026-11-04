@@ -31,5 +31,6 @@ public class KlassenModClient implements ClientModInitializer {
 
         KlassenHudOverlay.register();
         ItemTooltipCallback.EVENT.register(new KlassenTooltips());
+        BowEffectsClient.register();
     }
 }

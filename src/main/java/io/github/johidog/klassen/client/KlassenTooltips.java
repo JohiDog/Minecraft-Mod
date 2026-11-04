@@ -32,10 +32,22 @@ public final class KlassenTooltips implements ItemTooltipCallback {
 
         if (reqKey == null) return;
 
-        lines.add(Component.empty());
+        boolean isBow = stack.is(BOEGEN);
+        if (isBow) {
+            lines.add(Component.translatable("tooltip.klassen.subtitle.bow").withStyle(ChatFormatting.AQUA));
+        }
+        lines.add(Component.literal("──────────────").withStyle(ChatFormatting.DARK_GRAY));
         lines.add(Component.translatable("tooltip.klassen.req.header")
             .withStyle(ChatFormatting.GOLD, ChatFormatting.BOLD));
         lines.add(Component.translatable(reqKey).withStyle(ChatFormatting.RED));
+        if (isBow) {
+            lines.add(Component.empty());
+            lines.add(Component.translatable("tooltip.klassen.effect.header").withStyle(ChatFormatting.GOLD, ChatFormatting.BOLD));
+            lines.add(Component.translatable("tooltip.klassen.effect.bow1").withStyle(ChatFormatting.WHITE));
+            lines.add(Component.translatable("tooltip.klassen.effect.bow2").withStyle(ChatFormatting.WHITE));
+            lines.add(Component.translatable("tooltip.klassen.effect.bow3").withStyle(ChatFormatting.WHITE));
+            lines.add(Component.translatable("tooltip.klassen.effect.bow.cd").withStyle(ChatFormatting.GRAY, ChatFormatting.ITALIC));
+        }
         lines.add(Component.literal("――――――――――――――").withStyle(ChatFormatting.DARK_GRAY));
     }
 }
